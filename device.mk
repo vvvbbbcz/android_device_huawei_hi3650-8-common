@@ -11,6 +11,7 @@ PRODUCT_COPY_FILES += \
 # Rootdir
 PRODUCT_PACKAGES += \
     fstab.hi3650 \
+    fstab.hi3650.ramdisk \
     init.connectivity.rc \
     init.extmodem.rc \
     init.hi3650.rc \

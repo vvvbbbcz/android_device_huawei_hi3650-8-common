@@ -7,6 +7,7 @@
 prebuilt_etc {
     name: "fstab.hi3650",
     src: "etc/fstab.hi3650",
+    ramdisk_available: true,
     vendor: true,
 }
 
