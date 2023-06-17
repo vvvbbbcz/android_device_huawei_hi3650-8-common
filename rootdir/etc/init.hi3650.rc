@@ -24,6 +24,8 @@ on early-boot
     start hwemerffu
 
 on init
+    symlink /dev/block/platform/hi_mci.0 /dev/block/bootdevice
+
     # Audio
     chmod 0660 /dev/maxim_smartpa_dev
     chown media media /dev/maxim_smartpa_dev
