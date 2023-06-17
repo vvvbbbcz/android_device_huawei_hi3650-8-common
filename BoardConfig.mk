@@ -87,5 +87,8 @@ BOARD_ROOT_EXTRA_FOLDERS += \
     splash2 \
     version
 
+# Treble
+PRODUCT_USE_VNDK_OVERRIDE := true
+
 # Inherit the proprietary files
 include vendor/huawei/next/BoardConfigVendor.mk
