@@ -1,0 +1,60 @@
+//
+// Copyright (C) 2023 The LineageOS Project
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+
+prebuilt_etc {
+    name: "fstab.hi3650",
+    src: "etc/fstab.hi3650",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.connectivity.rc",
+    src: "etc/init.connectivity.rc",
+    sub_dir: "init",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.extmodem.rc",
+    src: "etc/init.extmodem.rc",
+    sub_dir: "init",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.hi3650.rc",
+    src: "etc/init.hi3650.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.hisi.rc",
+    src: "etc/init.hisi.rc",
+    sub_dir: "init",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.hisi.usb.rc",
+    src: "etc/init.hisi.usb.rc",
+    sub_dir: "init",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.platform.rc",
+    src: "etc/init.platform.rc",
+    sub_dir: "init",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.tee.rc",
+    src: "etc/init.tee.rc",
+    sub_dir: "init",
+    vendor: true,
+}

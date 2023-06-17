@@ -70,6 +70,9 @@ TARGET_BOARD_PLATFORM := hi3650
 # SEPolicy
 include device/hisi/sepolicy/SEPolicy.mk
 
+# Recovery
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.hi3650
+
 # Releasetools
 TARGET_RELEASETOOLS_EXTENSIONS := hardware/hisi/releasetools
 
