@@ -76,5 +76,16 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.hi3650
 # Releasetools
 TARGET_RELEASETOOLS_EXTENSIONS := hardware/hisi/releasetools
 
+# Root
+BOARD_ROOT_EXTRA_FOLDERS += \
+    3rdmodem \
+    3rdmodemnvm \
+    3rdmodemnvmbkp \
+    cust \
+    modem_log \
+    sec_storage \
+    splash2 \
+    version
+
 # Inherit the proprietary files
 include vendor/huawei/next/BoardConfigVendor.mk

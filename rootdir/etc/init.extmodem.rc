@@ -26,9 +26,6 @@ on early-boot
     setprop viatel.device.gps spi.5.ttySPI
 
     # Root structure
-    chmod 0750 /3rdmodem/
-    chmod 0750 /3rdmodemnvm/
-    chmod 0750 /3rdmodemnvmbkp/
     mkdir /3rdmodemnvm/viacbp82d 0740 radio radio
     mkdir /3rdmodemnvmbkp/viacbp82d 0740 radio radio
     chmod 0740 /3rdmodem/modem_image
