@@ -45,6 +45,11 @@ PRODUCT_PACKAGES += \
     libhwbinder.vendor \
     libhwbinder
 
+# Bluetooth
+PRODUCT_PACKAGES += \
+    android.hardware.bluetooth@1.0-impl \
+    android.hardware.bluetooth@1.0-service
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-impl \
