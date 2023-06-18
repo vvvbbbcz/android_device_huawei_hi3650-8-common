@@ -330,10 +330,7 @@ on fs
     wait /dev/block/bootdevice/by-name/vbmeta
 
     # Mount everything
-    mount_all /vendor/etc/fstab.${ro.hardware}
-
-    # Apply patches
-    mount_all_patch /patch_hw/fstab.patch_step1
+    mount_all /vendor/etc/fstab.${ro.hardware} --early
 
     # Splash2
     mkdir /splash2/log 0775 system log
@@ -344,6 +341,9 @@ on fs
 
     # Modem
     chown radio radio sys/devices/platform/balong_power/state
+
+on late-fs
+    mount_all /vendor/etc/fstab.${ro.hardware} --late
 
 on post-fs
     # Connectivity
