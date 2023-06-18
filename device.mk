@@ -4,6 +4,10 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+# AAPT
+PRODUCT_AAPT_CONFIG := normal xhdpi
+PRODUCT_AAPT_PREF_CONFIG := xhdpi
+
 # Recovery
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/init.recovery.hi3650.rc:$(TARGET_RECOVERY_OUT)/root/init.recovery.hi3650.rc
