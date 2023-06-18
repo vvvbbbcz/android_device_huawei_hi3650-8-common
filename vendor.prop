@@ -1,0 +1,2 @@
+# Recovery
+persist.sys.recovery_update=true
