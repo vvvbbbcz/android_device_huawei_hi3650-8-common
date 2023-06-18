@@ -102,5 +102,9 @@ VENDOR_SECURITY_PATCH := 2018-07-01
 # Treble
 PRODUCT_USE_VNDK_OVERRIDE := true
 
+# Vintf
+DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
+DEVICE_MATRIX_FILE := $(DEVICE_PATH)/compatibility_matrix.xml
+
 # Inherit the proprietary files
 include vendor/huawei/next/BoardConfigVendor.mk
