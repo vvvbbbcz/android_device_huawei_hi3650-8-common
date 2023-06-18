@@ -75,6 +75,9 @@ BOARD_VENDORIMAGE_PARTITION_SIZE := 637534208 # mmcblk0p57 (802816*1024)
 # Platform
 TARGET_BOARD_PLATFORM := hi3650
 
+# Properties
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
+
 # SEPolicy
 include device/hisi/sepolicy/SEPolicy.mk
 
