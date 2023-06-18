@@ -96,6 +96,9 @@ BOARD_ROOT_EXTRA_FOLDERS += \
     splash2 \
     version
 
+# SPL
+VENDOR_SECURITY_PATCH := 2018-07-01
+
 # Treble
 PRODUCT_USE_VNDK_OVERRIDE := true
 
