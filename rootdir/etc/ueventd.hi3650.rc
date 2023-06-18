@@ -82,7 +82,7 @@
 
 # GSM
 /dev/ttyHwGS1              0660    root system
-/dev/dsm                   0660    system dsm
+/dev/dsm                   0660    system system
 
 # Misc
 /dev/block/mmcblk0p4       0660    system system
