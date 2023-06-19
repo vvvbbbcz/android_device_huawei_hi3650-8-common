@@ -53,6 +53,16 @@ if [ -z "${SRC}" ]; then
     SRC="adb"
 fi
 
+function blob_fixup() {
+    case "${1}" in
+        vendor/etc/camera/*|odm/etc/camera/*)
+	    sed -i 's/gb2312/iso-8859-1/g' "${2}"
+	    sed -i 's/GB2312/iso-8859-1/g' "${2}"
+	    sed -i 's/xmlversion/xml version/g' "${2}"
+            ;;
+    esac
+}
+
 # Initialize the helper
 setup_vendor "${DEVICE}" "${VENDOR}" "${ANDROID_ROOT}" false "${CLEAN_VENDOR}"
 
