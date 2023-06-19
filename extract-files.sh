@@ -66,6 +66,12 @@ function blob_fixup() {
         vendor/lib*/egl/libGLES_mali.so|vendor/lib*/hw/gralloc.hi3650.so)
             "${PATCHELF}" --add-needed "libutilscallstack.so" "${2}"
             ;;
+        vendor/lib64/hwcam/hwcam.hi3650.m.NEXT.so)
+            "${PATCHELF}" --replace-needed "libskia.so" "libhwui.so" "${2}"
+            ;;
+        vendor/lib*/hw/camera.hi3650.so)
+            "${PATCHELF}" --replace-needed "libskia.so" "libhwui.so" "${2}"
+            ;;
         vendor/lib*/libxcollie.so)
             "${PATCHELF}" --add-needed "libbase_shim.so" "${2}"
             ;;
