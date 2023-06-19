@@ -89,6 +89,7 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.hi3650
 TARGET_RELEASETOOLS_EXTENSIONS := hardware/hisi/releasetools
 
 # RIL
+ENABLE_VENDOR_RIL_SERVICE := true
 BOARD_PROVIDES_LIBRIL := true
 
 # Root
