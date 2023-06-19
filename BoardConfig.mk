@@ -88,6 +88,9 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.hi3650
 # Releasetools
 TARGET_RELEASETOOLS_EXTENSIONS := hardware/hisi/releasetools
 
+# RIL
+BOARD_PROVIDES_LIBRIL := true
+
 # Root
 BOARD_ROOT_EXTRA_FOLDERS += \
     3rdmodem \

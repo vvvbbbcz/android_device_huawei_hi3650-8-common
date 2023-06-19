@@ -1232,6 +1232,8 @@ vendor/bin/atcmdserver
 vendor/etc/init/rild.rc
 
 # RIL
+-vendor/lib/libril.so
+-vendor/lib64/libril.so
 vendor/lib/libbalong-ril-1.so
 vendor/lib/libbalong-ril-2.so
 vendor/lib/libbalong-ril.so
