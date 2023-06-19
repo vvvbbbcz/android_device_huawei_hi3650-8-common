@@ -1,10 +1,5 @@
 import /vendor/etc/init/connectivity/init.connectivity.${ro.connectivity.chiptype}.rc
 
-on post-fs
-    restorecon /vendor/bin/wifidrvload
-    chmod 750 /venodor/bin/wifidrvload
-    chgrp shell /vendor/bin/wifidrvload
-
 on post-fs-data
     mkdir /data/misc/wifi 0770 wifi wifi
     chown wifi wifi /data/misc/wifi
