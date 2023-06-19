@@ -1177,7 +1177,7 @@ vendor/bin/syna_109A0_ta.sec
 vendor/bin/syna_155A_ta.sec
 
 # TEE (Configs)
-vendor/etc/native_packages.xml
+vendor/etc/native_packages.xml:vendor/etc/native_packages.bin
 
 # Storage
 vendor/bin/hwemerffu
