@@ -86,6 +86,7 @@ TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 include device/hisi/sepolicy/SEPolicy.mk
 
 # Recovery
+BOARD_USES_FULL_RECOVERY_IMAGE := true
 TARGET_RECOVERY_PIXEL_FORMAT := "BGRA_8888"
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.hi3650
 
