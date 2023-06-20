@@ -166,5 +166,9 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/hisi
 
+# USB
+PRODUCT_PACKAGES += \
+    android.hardware.usb@1.0-service.basic
+
 # Inherit the proprietary files
 $(call inherit-product, vendor/huawei/next/next-vendor.mk)
