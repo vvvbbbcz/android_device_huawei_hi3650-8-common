@@ -225,7 +225,9 @@ PRODUCT_PACKAGES += \
 # VNDK
 PRODUCT_PACKAGES += \
     libstdc++.vendor \
-    libhwui.vendor
+    libhwui.vendor \
+    libprotobuf-cpp-full-v29 \
+    libprotobuf-cpp-lite-v29
 
 # WiFi
 PRODUCT_PACKAGES += \
