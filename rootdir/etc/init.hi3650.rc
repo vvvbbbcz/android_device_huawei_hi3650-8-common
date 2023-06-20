@@ -25,6 +25,7 @@ on early-boot
 
 on init
     # USB
+    setprop sys.usb.configfs 1
     setprop sys.usb.controller hisi-usb-otg
 
     symlink /dev/block/platform/hi_mci.0 /dev/block/bootdevice
