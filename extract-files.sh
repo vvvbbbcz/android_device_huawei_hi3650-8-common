@@ -71,6 +71,7 @@ function blob_fixup() {
             ;;
         vendor/lib*/hw/camera.hi3650.so)
             "${PATCHELF}" --replace-needed "libskia.so" "libhwui.so" "${2}"
+            "${PATCHELF}" --add-needed "libui_shim.so" "${2}"
             ;;
         vendor/lib*/libxcollie.so)
             "${PATCHELF}" --add-needed "libbase_shim.so" "${2}"
