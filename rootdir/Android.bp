@@ -12,6 +12,19 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
+    name: "fstab.modem",
+    src: "etc/fstab.modem",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.balong_modem.rc",
+    src: "etc/init.balong_modem.rc",
+    sub_dir: "init",
+    vendor: true,
+}
+
+prebuilt_etc {
     name: "init.connectivity.rc",
     src: "etc/init.connectivity.rc",
     sub_dir: "init",
