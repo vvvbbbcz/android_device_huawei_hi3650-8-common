@@ -9,10 +9,6 @@ on early-boot
     write /sys/block/dm-0/queue/read_ahead_kb 2048
     chown system system /sys/block/sdd/queue/usr_ctrl
 
-    # Support legacy paths
-    symlink /sdcard /mnt/sdcard
-    symlink /sdcard /storage/sdcard0
-
     # Create Ext SDcard mountpoint
     mkdir /mnt/media_rw 0750 media_rw media_rw
     mkdir /hisee_fs 0740 root root
