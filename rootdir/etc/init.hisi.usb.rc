@@ -37,7 +37,8 @@ on init
 
     # USB
     setprop sys.usb.configfs 1
-    setprop sys.usb.controller hisi-usb-otg
+    setprop sys.usb.controller ff100000.dwc3
+    setprop vendor.usb.controller ff100000.dwc3
     setprop sys.usb.config ${persist.vendor.usb.config}
 
     # FFS
