@@ -35,7 +35,11 @@ on init
     chown system system /sys/class/android_usb/android0/switch_request
     chmod 0664 /sys/class/android_usb/android0/switch_request
 
-# f_fs
+    # USB
+    setprop sys.usb.configfs 1
+    setprop sys.usb.controller hisi-usb-otg
+
+    # FFS
     mkdir /dev/usb-ffs 0770 shell shell
     mkdir /dev/usb-ffs/adb 0770 shell shell
     mount functionfs adb /dev/usb-ffs/adb uid=2000,gid=2000
