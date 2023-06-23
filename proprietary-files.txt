@@ -1385,8 +1385,4 @@ vendor/lib64/vendor.huawei.hardware.fusd@1.1.so
 vendor/lib64/vendor.huawei.hardware.modemlogcat@1.0.so
 
 # Vulkan
-vendor/lib/hw/vulkan.hi3650.so
-vendor/lib/libOpenCL.so
-vendor/lib64/hw/vulkan.hi3650.so
-vendor/lib64/libOpenCL.so
 vendor/lib64/libOpenCLFoundation.so
