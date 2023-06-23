@@ -23,6 +23,8 @@ TARGET_BOOTLOADER_BOARD_NAME := hi3650
 TARGET_NO_BOOTLOADER := true
 
 # Boot Image
+BOARD_CUSTOM_BOOTIMG := true
+BOARD_CUSTOM_BOOTIMG_MK := hardware/hisi/mkbootimg.mk
 BOARD_KERNEL_CMDLINE := loglevel=4 initcall_debug=n page_tracker=on slub_min_objects=12 unmovable_isolate1=2:192M,3:224M,4:256M printktimer=0xfff0a000,0x534,0x538
 BOARD_KERNEL_CMDLINE += androidboot.init_fatal_reboot_target=recovery
 BOARD_KERNEL_BASE := 0x00478000
@@ -46,6 +48,9 @@ TARGET_KERNEL_CONFIG := merge_hi3650_defconfig
 
 # Platform
 TARGET_BOARD_PLATFORM := hi3650
+
+# Releasetools
+TARGET_RELEASETOOLS_EXTENSIONS := hardware/hisi/releasetools
 
 # Inherit the proprietary files
 include vendor/huawei/next/BoardConfigVendor.mk
