@@ -49,6 +49,9 @@ TARGET_KERNEL_CONFIG := merge_hi3650_defconfig
 # Platform
 TARGET_BOARD_PLATFORM := hi3650
 
+# SEPolicy
+include device/hisi/sepolicy/SEPolicy.mk
+
 # Releasetools
 TARGET_RELEASETOOLS_EXTENSIONS := hardware/hisi/releasetools
 
