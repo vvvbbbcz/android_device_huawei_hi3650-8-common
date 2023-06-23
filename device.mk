@@ -105,6 +105,10 @@ PRODUCT_PACKAGES += \
     android.hardware.memtrack@1.0-impl \
     libdrm.vendor
 
+# Hisi
+PRODUCT_PACKAGES += \
+    hisi_init
+
 # Health
 PRODUCT_PACKAGES += \
     android.hardware.health@2.1-service \
