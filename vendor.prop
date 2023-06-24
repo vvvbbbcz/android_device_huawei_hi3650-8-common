@@ -34,6 +34,7 @@ debug.sf.latch_unsignaled=1
 debug.sf.disable_backpressure=1
 persist.partial_update_support=1
 persist.rog_feature=1
+debug.renderengine.backend=threaded
 
 # Gralloc
 persist.smart_pool=1
