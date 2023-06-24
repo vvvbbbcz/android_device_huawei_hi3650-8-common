@@ -79,9 +79,6 @@ function blob_fixup() {
         vendor/lib*/libwvhidl.so)
             "${PATCHELF}" --replace-needed "libprotobuf-cpp-lite.so" "libprotobuf-cpp-lite-v29.so" "${2}"
             ;;
-        vendor/lib*/libxcollie.so)
-            "${PATCHELF}" --add-needed "libbase_shim.so" "${2}"
-            ;;
         vendor/lib*/libiawareperf_server.so)
             "${PATCHELF}" --add-needed "libshim_perfhub.so" "${2}"
             ;;

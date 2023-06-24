@@ -107,7 +107,8 @@ PRODUCT_PACKAGES += \
 
 # Hisi
 PRODUCT_PACKAGES += \
-    hisi_init
+    hisi_init \
+    libxcollie
 
 # Health
 PRODUCT_PACKAGES += \

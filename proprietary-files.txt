@@ -1336,7 +1336,6 @@ vendor/lib/libscanner.so
 vendor/lib/libscenedetection.so
 vendor/lib/libthpinterface.so
 vendor/lib/libtrans_depth_code.so
-vendor/lib/libxcollie.so
 vendor/lib/vendor.huawei.hardware.ai@1.0.so
 vendor/lib/vendor.huawei.hardware.dubai@1.0.so
 vendor/lib/vendor.huawei.hardware.fusd@1.0.so
@@ -1377,7 +1376,6 @@ vendor/lib64/librpc.so
 vendor/lib64/libscenedetection.so
 vendor/lib64/libthpinterface.so
 vendor/lib64/libtrans_depth_code.so
-vendor/lib64/libxcollie.so
 vendor/lib64/vendor.huawei.hardware.ai@1.0.so
 vendor/lib64/vendor.huawei.hardware.dubai@1.0.so
 vendor/lib64/vendor.huawei.hardware.fusd@1.0.so
