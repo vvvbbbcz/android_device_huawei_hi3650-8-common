@@ -1143,6 +1143,8 @@ vendor/lib/libtrustzone_key_manager.so
 vendor/lib64/libstorekeybox.so
 vendor/lib64/libteec.so
 vendor/lib64/libtrustzone_key_manager.so
+lib/libtuidaemon.so:vendor/lib/libtuidaemon.so
+lib64/libtuidaemon.so:vendor/lib64/libtuidaemon.so
 
 # TEE (Hardware)
 vendor/lib/vendor.huawei.hardware.libteec@1.0.so
@@ -1153,6 +1155,7 @@ vendor/lib64/vendor.huawei.hardware.teecdaemon@1.0.so
 
 # TEE (Daemon)
 vendor/bin/teecd
+bin/system_teecd:vendor/bin/system_teecd
 
 # TEE (Sec)
 vendor/bin/6c8cf255-ca98-439e-a98e-ade64022ecb6.sec
