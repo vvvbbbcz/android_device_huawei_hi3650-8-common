@@ -1092,22 +1092,16 @@ vendor/lib64/vendor.huawei.hardware.hwvibrator@1.0.so
 # WiFi
 vendor/lib/lib_wifi_sar.so
 vendor/lib/libhwwifi-hal.so
-vendor/lib/libwifi-hal-bcm.so
-vendor/lib/libwifi_bcm.so
 vendor/lib/libwifi_ext.default.so
 vendor/lib/libwifi_factory_test.so
 vendor/lib/libwifi_wapi_hisi.so
 vendor/lib64/lib_wifi_sar.so
 vendor/lib64/libhwwifi-hal.so
-vendor/lib64/libwifi-hal-bcm.so
-vendor/lib64/libwifi_bcm.so
 vendor/lib64/libwifi_ext.default.so
 vendor/lib64/libwifi_factory_test.so
 vendor/lib64/libwifi_wapi_hisi.so
 
 # WiFi (Hardware)
-vendor/bin/hw/vendor.huawei.hardware.wifi@1.1-service
-vendor/etc/init/vendor.huawei.hardware.wifi@1.1-service.rc
 vendor/lib/vendor.huawei.hardware.hinetmanager@1.0.so
 vendor/lib/vendor.huawei.hardware.wifi.supplicant@1.0.so
 vendor/lib/vendor.huawei.hardware.wifi@1.0.so
