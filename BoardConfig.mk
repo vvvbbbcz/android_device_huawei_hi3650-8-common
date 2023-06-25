@@ -84,7 +84,6 @@ TARGET_BOARD_PLATFORM := hi3650
 
 # Properties
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
-TARGET_SYSTEM_EXT_PROP += $(DEVICE_PATH)/system_ext.prop
 
 # SEPolicy
 include device/hisi/sepolicy/SEPolicy.mk
