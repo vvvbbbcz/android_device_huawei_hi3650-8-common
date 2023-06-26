@@ -390,14 +390,6 @@ on boot
     chown system system /sys/class/leds/lcd_backlight0/brightness
     chmod 644 /sys/class/leds/lcd_backlight0/brightness
 
-    # ISP
-    chown media media /system/vendor/firmware/isp_fw.elf
-    chown media media /system/vendor/firmware/isp_bw.elf
-    chmod 0400 /system/vendor/firmware/isp_fw.elf
-    chmod 0400 /system/vendor/firmware/isp_bw.elf
-    symlink /system/vendor/firmware/isp_fw.elf /lib/firmware/isp_fw.elf
-    symlink /system/vendor/firmware/isp_bw.elf /lib/firmware/isp_bw.elf
-
     # PMIC
     write /sys/kernel/pmic_mntn/pmic_exch 1
 
