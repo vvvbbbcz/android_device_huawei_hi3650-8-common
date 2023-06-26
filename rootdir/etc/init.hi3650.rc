@@ -164,26 +164,6 @@ on init
     chown system system /dev/ipu
 
     # Configure CPU sets
-    mkdir /dev/cpuctl
-    mount cgroup none /dev/cpuctl cpu
-    chown system system /dev/cpuctl
-    chown system system /dev/cpuctl/tasks
-    chmod 0666 /dev/cpuctl/tasks
-    write /dev/cpuctl/cpu.shares 1024
-    write /dev/cpuctl/cpu.rt_runtime_us 800000
-    write /dev/cpuctl/cpu.rt_period_us 1000000
-
-    mkdir /dev/cpuctl/limit
-    chown system system /dev/cpuctl/limit/tasks
-    chmod 0644 /dev/cpuctl/limit/tasks
-    write /dev/cpuctl/limit/cpu.shares 1024
-    write /dev/cpuctl/limit/cpu.rt_runtime_us 800000
-    write /dev/cpuctl/limit/cpu.rt_period_us 1000000
-
-    mkdir /dev/cpuset
-    mount cgroup none /dev/cpuset cpuset,cpuset_noprefix
-    mount cgroup none /dev/cpuset remount cpuset,blkio,cpuset_noprefix
-
     mkdir /dev/cpuset/foreground
     write /dev/cpuset/foreground/cpus 0-7
     write /dev/cpuset/foreground/mems 0
