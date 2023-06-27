@@ -296,6 +296,8 @@ on charger
 
     write /sys/kernel/eas/boot_boost 0
 
+    class_start charger
+
 on fs
     # Root structure
     mkdir /patch_hw 0775 system system
@@ -951,3 +953,8 @@ service hwemerffu /vendor/bin/hwemerffu
     user root
     group root
     oneshot
+
+service charger /system/bin/charger
+    class charger
+    critical
+    seclabel u:r:charger:s0
