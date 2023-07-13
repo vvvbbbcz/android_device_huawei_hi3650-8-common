@@ -795,12 +795,12 @@ vendor/etc/init/vendor.huawei.hardware.gnss@1.0-service.rc
 vendor/etc/init/vendor.huawei.hardware.hisupl@1.0-service.rc
 vendor/lib/vendor.huawei.hardware.gnss@1.0.so
 vendor/lib/vendor.huawei.hardware.hisupl@1.0.so
-vendor/lib64/hw/flp4774.default.so
+vendor/lib64/hw/flp4774.default.so:vendor/lib64/hw/flp.4774.default.so
 vendor/lib64/hw/gps.hi1102.default.so
-vendor/lib64/hw/gps47531.default.so
-vendor/lib64/hw/gps47531cl.default.so
-vendor/lib64/hw/gps4774.default.so
-vendor/lib64/hw/gps4774cl.default.so
+vendor/lib64/hw/gps47531.default.so:vendor/lib64/hw/gps.47531.default.so
+vendor/lib64/hw/gps47531cl.default.so:vendor/lib64/hw/gps.47531cl.default.so
+vendor/lib64/hw/gps4774.default.so:vendor/lib64/hw/gps.4774.default.so
+vendor/lib64/hw/gps4774cl.default.so:vendor/lib64/hw/gps.4774cl.default.so
 vendor/lib64/hw/hisupl.hi1102.default.so
 vendor/lib64/hw/vendor.huawei.hardware.gnss@1.0-impl.so
 vendor/lib64/hw/vendor.huawei.hardware.hisupl@1.0-impl.so
@@ -950,6 +950,8 @@ vendor/lib/hw/keystore.hi3650.so
 vendor/lib64/hw/keystore.hi3650.so
 
 # Lights (Hardware)
+vendor/lib/hw/lights.default.so:vendor/lib/hw/lights.hi3650.so
+vendor/lib64/hw/lights.default.so:vendor/lib64/hw/lights.hi3650.so
 vendor/bin/hw/vendor.huawei.hardware.light@2.0-service
 vendor/etc/init/vendor.huawei.hardware.light@2.0-service.rc
 vendor/lib/vendor.huawei.hardware.light@2.0.so
@@ -1051,6 +1053,8 @@ vendor/lib/lib_sensor_fac_interface.so
 vendor/lib64/lib_sensor_fac_interface.so
 
 # Sensors (Hardware)
+vendor/lib/hw/sensors.default.so:vendor/lib/hw/sensors.hi3650.so
+vendor/lib64/hw/sensors.default.so:vendor/lib64/hw/sensors.hi3650.so
 vendor/bin/hw/vendor.huawei.hardware.sensors@1.0-service
 vendor/etc/init/vendor.huawei.hardware.sensors@1.0-service.rc
 vendor/lib/vendor.huawei.hardware.activity_recognition@1.0.so
