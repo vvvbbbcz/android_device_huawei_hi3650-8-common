@@ -236,6 +236,9 @@ PRODUCT_PACKAGES += \
     libshim_perfhub \
     libshim_radio
 
+# Shipping API level
+PRODUCT_SHIPPING_API_LEVEL := 23
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
