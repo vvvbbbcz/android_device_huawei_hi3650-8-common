@@ -3,6 +3,7 @@ import /vendor/etc/init/hw/init.connectivity.rc
 import /vendor/etc/init/hw/init.extmodem.rc
 import /vendor/etc/init/hw/init.hisi.rc
 import /vendor/etc/init/hw/init.hisi.usb.rc
+import /vendor/etc/init/hw/init.override.rc
 import /vendor/etc/init/hw/init.platform.rc
 import /vendor/etc/init/hw/init.tee.rc
 
@@ -886,7 +887,7 @@ on property:ro.config.hw_vowifi=true
     class_start vowifi
 
 on property:sys.userdata_is_ready=1
-    exec - root -- /vendor/bin/sh /vendor/etc/blkcg_init.sh 0 0
+    exec u:r:vendor_blkcginit:s0 root root -- /vendor/bin/sh /vendor/etc/blkcg_init.sh 0 0
 
 service datarply /vendor/bin/data_replay
     user system

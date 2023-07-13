@@ -214,6 +214,7 @@ PRODUCT_PACKAGES += \
     init.hi3650.rc \
     init.hisi.rc \
     init.hisi.usb.rc \
+    init.override.rc \
     init.platform.rc \
     init.tee.rc \
     ueventd.hi3650.rc
