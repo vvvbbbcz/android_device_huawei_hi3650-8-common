@@ -1068,10 +1068,6 @@ vendor/lib64/vendor.huawei.hardware.sensors@1.0.so
 # Sensors (Config)
 vendor/etc/SensorHub.patch
 
-# Thermal (Hardware)
-vendor/lib/hw/thermal.hi3650.so
-vendor/lib64/hw/thermal.hi3650.so
-
 # VR (Hardware)
 vendor/bin/hw/vendor.huawei.hardware.hivrar@1.0-service
 vendor/etc/init/vendor.huawei.hardware.hivrar@1.0-service.rc
