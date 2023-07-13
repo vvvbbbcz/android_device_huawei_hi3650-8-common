@@ -20,21 +20,21 @@ prebuilt_etc {
 prebuilt_etc {
     name: "init.balong_modem.rc",
     src: "etc/init.balong_modem.rc",
-    sub_dir: "init",
+    sub_dir: "init/hw",
     vendor: true,
 }
 
 prebuilt_etc {
     name: "init.connectivity.rc",
     src: "etc/init.connectivity.rc",
-    sub_dir: "init",
+    sub_dir: "init/hw",
     vendor: true,
 }
 
 prebuilt_etc {
     name: "init.extmodem.rc",
     src: "etc/init.extmodem.rc",
-    sub_dir: "init",
+    sub_dir: "init/hw",
     vendor: true,
 }
 
@@ -48,28 +48,28 @@ prebuilt_etc {
 prebuilt_etc {
     name: "init.hisi.rc",
     src: "etc/init.hisi.rc",
-    sub_dir: "init",
+    sub_dir: "init/hw",
     vendor: true,
 }
 
 prebuilt_etc {
     name: "init.hisi.usb.rc",
     src: "etc/init.hisi.usb.rc",
-    sub_dir: "init",
+    sub_dir: "init/hw",
     vendor: true,
 }
 
 prebuilt_etc {
     name: "init.platform.rc",
     src: "etc/init.platform.rc",
-    sub_dir: "init",
+    sub_dir: "init/hw",
     vendor: true,
 }
 
 prebuilt_etc {
     name: "init.tee.rc",
     src: "etc/init.tee.rc",
-    sub_dir: "init",
+    sub_dir: "init/hw",
     vendor: true,
 }
 
