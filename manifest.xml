@@ -418,6 +418,15 @@
         </interface>
     </hal>
     <hal format="hidl">
+        <name>vendor.huawei.hardware.hwfs</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IHwfs</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
         <name>vendor.huawei.hardware.hwvibrator</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
@@ -519,7 +528,7 @@
     <hal format="hidl">
         <name>vendor.huawei.hardware.radio</name>
         <transport>hwbinder</transport>
-        <version>1.0</version>
+        <version>1.1</version>
         <interface>
             <name>IRadio</name>
             <instance>rilc</instance>
