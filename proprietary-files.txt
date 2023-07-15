@@ -975,10 +975,9 @@ vendor/bin/hw/vendor.huawei.hardware.jpegdec@1.0-service
 vendor/etc/init/vendor.huawei.hardware.jpegdec@1.0-service.rc
 
 # NFC
+product/etc/nfc/libnfc_nxp_next_L09.conf:vendor/etc/libnfc-nxp.conf
+odm/etc/libnfc-brcm.conf:vendor/etc/libnfc-brcm.conf
 odm/etc/firmware/libpn548ad_fw.so
-odm/etc/libnfc-brcm.conf
-odm/etc/libnfc-nxp.conf
-product/etc/nfc/libnfc_nxp_next_L09.conf
 vendor/bin/hw/vendor.huawei.hardware.nfc@1.0-service
 vendor/bin/nfcgetcplc
 vendor/etc/init/vendor.huawei.hardware.nfc@1.0-service.rc
