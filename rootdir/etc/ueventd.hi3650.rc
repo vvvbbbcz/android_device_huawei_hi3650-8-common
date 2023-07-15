@@ -89,3 +89,6 @@
 
 # Misc
 /dev/block/mmcblk0p4       0660    system system
+
+# NFC
+/dev/pn544                 0660    nfc nfc
