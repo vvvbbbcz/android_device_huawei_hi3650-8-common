@@ -977,18 +977,6 @@ vendor/etc/init/vendor.huawei.hardware.jpegdec@1.0-service.rc
 # NFC
 product/etc/nfc/libnfc_nxp_next_L09.conf:vendor/etc/libnfc-nxp.conf
 odm/etc/libnfc-brcm.conf:vendor/etc/libnfc-brcm.conf
-odm/etc/firmware/libpn548ad_fw.so
-vendor/bin/hw/vendor.huawei.hardware.nfc@1.0-service
-vendor/bin/nfcgetcplc
-vendor/etc/init/vendor.huawei.hardware.nfc@1.0-service.rc
-vendor/lib/hw/nfc_nci.pn54x.default.so
-vendor/lib/vendor.huawei.hardware.nfc@1.0.so
-vendor/lib64/hw/nfc_nci.pn54x.default.so
-vendor/lib64/hw/nfc_nci.pn54x_45_548.default.so
-vendor/lib64/hw/nfc_nci.pn54x_45_551.default.so
-vendor/lib64/hw/nfc_nci.pn54x_45_66t.default.so
-vendor/lib64/hw/vendor.huawei.hardware.nfc@1.0-impl.so
-vendor/lib64/vendor.huawei.hardware.nfc@1.0.so
 
 # Performance
 vendor/bin/irqbalance
