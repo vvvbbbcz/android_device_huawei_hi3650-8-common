@@ -128,6 +128,10 @@ PRODUCT_PACKAGES += \
     libkeystore-engine-wifi-hidl \
     libkeystore-wifi-hidl
 
+# Lights
+PRODUCT_PACKAGES += \
+    android.hardware.light@2.0.vendor
+
 # Media
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/media,$(TARGET_COPY_OUT_VENDOR)/etc)
@@ -236,6 +240,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0.vendor
 
+PRODUCT_PACKAGES += \
+    android.frameworks.sensorservice@1.0.vendor
+
 # Shims
 PRODUCT_PACKAGES += \
     libbase_shim \
@@ -256,6 +263,10 @@ PRODUCT_SOONG_NAMESPACES += \
 # USB
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service.basic
+
+# Vibrator
+PRODUCT_PACKAGES += \
+    android.hardware.vibrator@1.0.vendor
 
 # VNDK
 PRODUCT_PACKAGES += \
