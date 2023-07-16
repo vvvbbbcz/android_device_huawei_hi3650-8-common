@@ -231,6 +231,9 @@ PRODUCT_PACKAGES += \
     init.tee.rc \
     ueventd.hi3650.rc
 
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/rootdir/connectivity/,$(TARGET_COPY_OUT_VENDOR)/etc/init/connectivity)
+
 # RIL
 PRODUCT_PACKAGES += \
     android.hardware.radio@1.0.vendor \
