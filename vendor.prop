@@ -83,6 +83,7 @@ ro.config.enable_rcc=true
 
 # Media
 debug.stagefright.ccodec=0
+media.stagefright.thumbnail.prefer_hw_codecs=true
 
 # MMU
 ro.config.mmu_en=1
