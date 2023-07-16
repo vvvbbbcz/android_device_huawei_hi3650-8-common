@@ -81,6 +81,9 @@ ro.config.hw_ukey_version=2
 # Kernel
 ro.config.enable_rcc=true
 
+# Media
+debug.stagefright.ccodec=0
+
 # MMU
 ro.config.mmu_en=1
 
