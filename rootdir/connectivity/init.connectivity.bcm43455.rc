@@ -63,12 +63,6 @@ on boot
     chown system system /sys/module/bcmdhd/parameters/region
     write /sys/module/bcmdhd/parameters/region ${ro.product.locale.region}
 
-service wifi_wakeup_src /vendor/bin/wifiwakeupsrc
-    class core
-    user root
-    group root wifi
-    disabled
-    oneshot
 service p2p_supplicant /system/bin/wpa_supplicant -d \
     -iwlan0 -Dnl80211 -c/data/misc/wifi/wpa_supplicant.conf \
     -I/system/etc/wifi/wpa_supplicant_overlay.conf \
