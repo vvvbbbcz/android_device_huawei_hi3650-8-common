@@ -88,6 +88,12 @@ function blob_fixup() {
         vendor/lib*/libRefocusContrastPosition.so|vendor/lib*/libhwlog.so)
             "${PATCHELF}" --add-needed "libshim_log.so" "${2}"
             ;;
+        vendor/lib*/soundfx/libhuaweiprocessing.so)
+            "${PATCHELF}" --remove-needed "libicuuc.so" "${2}"
+            ;;
+        vendor/lib*/hw/flp.default.so)
+            "${PATCHELF}" --remove-needed "libicuuc.so" "${2}"
+            ;;
         vendor/lib*/hw/audio.primary.hi3650.so|vendor/lib*/libhivwservice.so)
 	    "${PATCHELF}" --add-needed "libprocessgroup.so" "${2}"
 	    ;;
@@ -100,6 +106,9 @@ function blob_fixup() {
             sed -i "s|\x77\xC8\xFF\x97\x88\x12|\x1F\x20\x03\xD5\x88\x12|g" "${2}"
             # HasDamageRegion()
             sed -i "s|\x90\xB6\xFF\x97\x60\x00|\x1F\x20\x03\xD5\x60\x00|g" "${2}"
+            ;;
+        vendor/bin/gpsdaemon)
+            "${PATCHELF}" --remove-needed "libicuuc.so" "${2}"
             ;;
         vendor/bin/hw/android.hardware.drm@1.0-service.widevine)
             "${PATCHELF}" --add-needed "libbase_shim.so" "${2}"
