@@ -107,6 +107,9 @@ PRODUCT_PACKAGES += \
     android.hardware.memtrack@1.0-impl \
     libdrm.vendor
 
+PRODUCT_PACKAGES += \
+    android.hardware.graphics.common@1.0_types.vendor
+
 # Hisi
 PRODUCT_PACKAGES += \
     hisi_init \
@@ -239,6 +242,9 @@ PRODUCT_PACKAGES += \
     android.hardware.radio@1.0.vendor \
     android.hardware.radio.deprecated@1.0.vendor
 
+PRODUCT_PACKAGES += \
+    android.hardware.radio@1.0_types.vendor
+
 # Sensors
 PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0.vendor
@@ -252,8 +258,7 @@ PRODUCT_PACKAGES += \
     libui_shim \
     libshim_hardware \
     libshim_log \
-    libshim_perfhub \
-    libshim_radio
+    libshim_perfhub
 
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 23
