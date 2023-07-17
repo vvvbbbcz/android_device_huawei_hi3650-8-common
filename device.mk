@@ -118,6 +118,7 @@ PRODUCT_PACKAGES += \
 # Health
 PRODUCT_PACKAGES += \
     android.hardware.health@2.1-service \
+    android.hardware.health@2.1-impl.recovery \
     android.hardware.health@2.1-impl
 
 # HIDL
