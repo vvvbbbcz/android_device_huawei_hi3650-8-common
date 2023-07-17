@@ -109,6 +109,7 @@ function blob_fixup() {
             ;;
         vendor/bin/gpsdaemon)
             "${PATCHELF}" --remove-needed "libicuuc.so" "${2}"
+            sed -i 's/\([Uu][Cc][Nn][Vv]_[A-Za-z_]*\)_58/\1_70/g' "${2}"
             ;;
         vendor/bin/hw/android.hardware.drm@1.0-service.widevine)
             "${PATCHELF}" --add-needed "libbase_shim.so" "${2}"
