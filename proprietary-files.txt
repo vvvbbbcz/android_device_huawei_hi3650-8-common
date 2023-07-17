@@ -1183,10 +1183,12 @@ vendor/lib/libbalong-ril-1.so
 vendor/lib/libbalong-ril-2.so
 vendor/lib/libbalong-ril.so
 vendor/lib/libvia-ril.so
+vendor/lib/lib_wifi_sar.so
 vendor/lib64/libbalong-ril-1.so
 vendor/lib64/libbalong-ril-2.so
 vendor/lib64/libbalong-ril.so
 vendor/lib64/libvia-ril.so
+vendor/lib64/lib_wifi_sar.so
 
 # RIL (Properties)
 vendor/phone.prop
