@@ -258,7 +258,7 @@ PRODUCT_PACKAGES += \
     libui_shim \
     libshim_hardware \
     libshim_log \
-    libshim_perfhub
+    libtinyxml2_shim.vendor
 
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 23

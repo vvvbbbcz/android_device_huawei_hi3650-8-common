@@ -88,10 +88,10 @@ function blob_fixup() {
             sed -i 's|hisupl.hi1102|hisupl\x00\x00\x00\x00\x00\x00\x00|g' "${2}"
             ;;
         vendor/lib*/libiawareperf_server.so)
-            "${PATCHELF}" --add-needed "libshim_perfhub.so" "${2}"
+            "${PATCHELF}" --add-needed "libtinyxml2_shim.so" "${2}"
             ;;
         vendor/lib*/libperfhub_service.so)
-            "${PATCHELF}" --add-needed "libshim_perfhub.so" "${2}"
+            "${PATCHELF}" --add-needed "libtinyxml2_shim.so" "${2}"
             ;;
         vendor/lib*/libRefocusContrastPosition.so|vendor/lib*/libhwlog.so)
             "${PATCHELF}" --add-needed "libshim_log.so" "${2}"
