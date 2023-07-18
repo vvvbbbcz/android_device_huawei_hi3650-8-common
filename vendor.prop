@@ -117,6 +117,7 @@ use_sensorhub_labc=false
 persist.fw.force_adoptable=true
 
 # SurfaceFlinger
+debug.sf.disable_client_composition_cache=1
 service.sf.prime_shader_cache=0
 
 # Time
