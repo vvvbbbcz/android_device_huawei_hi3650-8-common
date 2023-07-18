@@ -263,7 +263,8 @@ PRODUCT_PACKAGES += \
     libsensor_vendor \
     libshim_hardware \
     libshim_log \
-    libtinyxml2_shim.vendor
+    libtinyxml2_shim.vendor \
+    guivnd
 
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 23
