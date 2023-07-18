@@ -70,12 +70,7 @@ odm/etc/audio/sws/sws_NEXT_normal.xml
 
 # Bluetooth
 vendor/lib/modules/bluetooth_power.ko
-vendor/lib/libbt-vendor-hisi.so
-vendor/lib/libbt-vendor.so
-vendor/lib/libbt_factory_test.so
-vendor/lib64/libbt-vendor-hisi.so
 vendor/lib64/libbt-vendor.so
-vendor/lib64/libbt_factory_test.so
 
 # Bluetooth (Configs)
 vendor/etc/bluetooth/bt_vendor.conf
