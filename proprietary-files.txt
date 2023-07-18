@@ -794,12 +794,9 @@ vendor/etc/init/vendor.huawei.hardware.gnss@1.0-service.rc
 vendor/etc/init/vendor.huawei.hardware.hisupl@1.0-service.rc
 vendor/lib/vendor.huawei.hardware.gnss@1.0.so
 vendor/lib/vendor.huawei.hardware.hisupl@1.0.so
-vendor/lib64/hw/flp4774.default.so:vendor/lib64/hw/flp.4774.default.so
+vendor/lib64/hw/flp4774.default.so:vendor/lib64/hw/flp.default.so
 vendor/lib64/hw/gps.hi1102.default.so
-vendor/lib64/hw/gps47531.default.so:vendor/lib64/hw/gps.47531.default.so
-vendor/lib64/hw/gps47531cl.default.so:vendor/lib64/hw/gps.47531cl.default.so
-vendor/lib64/hw/gps4774.default.so:vendor/lib64/hw/gps.4774.default.so
-vendor/lib64/hw/gps4774cl.default.so:vendor/lib64/hw/gps.4774cl.default.so
+vendor/lib64/hw/gps47531.default.so:vendor/lib64/hw/gps.default.so
 vendor/lib64/hw/hisupl.hi1102.default.so:vendor/lib64/hw/hisupl.default.so
 vendor/lib64/hw/vendor.huawei.hardware.gnss@1.0-impl.so
 vendor/lib64/hw/vendor.huawei.hardware.hisupl@1.0-impl.so
