@@ -76,6 +76,10 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.device@3.4.vendor \
     android.hardware.camera.provider@2.4.vendor
 
+PRODUCT_PACKAGES += \
+    libgui_vendor \
+    libstdc++.vendor
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-impl \
@@ -256,6 +260,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libbase_shim \
     libui_shim.vendor \
+    libsensor_vendor \
     libshim_hardware \
     libshim_log \
     libtinyxml2_shim.vendor

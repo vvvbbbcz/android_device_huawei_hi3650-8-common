@@ -68,6 +68,7 @@ function blob_fixup() {
             ;;
         vendor/lib64/hwcam/hwcam.hi3650.m.NEXT.so)
             "${PATCHELF}" --replace-needed "libskia.so" "libhwui.so" "${2}"
+            "${PATCHELF}" --replace-needed "libgui.so" "libgui_vendor.so" "${2}"
             "${PATCHELF}" --add-needed "libtinyxml2_shim.so" "${2}"
             # NOP out assertOk() and return_status()
             "${SIGSCAN}" -p "e0 43 01 91 44 51 fa 97" -P "e0 43 01 91 1f 20 03 d5" -f "${2}"
@@ -82,6 +83,15 @@ function blob_fixup() {
             ;;
         vendor/lib*/libwvhidl.so)
             "${PATCHELF}" --replace-needed "libprotobuf-cpp-lite.so" "libprotobuf-cpp-lite-v29.so" "${2}"
+            ;;
+        vendor/lib*/libcamera_algo.so)
+            "${PATCHELF}" --replace-needed "libgui.so" "libgui_vendor.so" "${2}"
+            ;;
+        vendor/lib*/libcamera_ivp.so)
+            "${PATCHELF}" --replace-needed "libgui.so" "libgui_vendor.so" "${2}"
+            ;;
+        vendor/lib64/libFaceBeautyMeiwo*.so|vendor/lib64/libcontrastCal.so)
+            "${PATCHELF}" --replace-needed "libgui.so" "libgui_vendor.so" "${2}"
             ;;
         vendor/lib*/hw/vendor.huawei.hardware.hisupl@1.0-impl.so)
             # Respect the HMI's ID, which is hisupl
