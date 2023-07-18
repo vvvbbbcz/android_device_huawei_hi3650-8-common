@@ -116,6 +116,9 @@ use_sensorhub_labc=false
 # Storage
 persist.fw.force_adoptable=true
 
+# SurfaceFlinger
+service.sf.prime_shader_cache=0
+
 # Time
 persist.ai.timedebug.enable=false
 
