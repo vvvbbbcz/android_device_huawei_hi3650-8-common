@@ -132,3 +132,6 @@ persist.media.usbvoice.name=USB-Audio - HUAWEI GLASS
 # VR
 ro.vr_display.service=true
 persist.egl.support_vr=1
+
+# Zygote
+zygote.critical_window.minute=10
