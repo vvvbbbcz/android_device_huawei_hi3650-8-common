@@ -55,6 +55,7 @@ debug.renderengine.backend=threaded
 
 # Gralloc
 persist.smart_pool=1
+persist.log.tag.GRALLOC=S
 
 # HWUI
 ro.hwui.texture_cache_size=72
