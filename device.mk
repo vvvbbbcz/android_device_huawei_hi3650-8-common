@@ -260,6 +260,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libbase_shim \
     libbinder_shim \
+    libutils_shim.vendor \
     libui_shim.vendor \
     libpiex_shim \
     libsensor_vendor \

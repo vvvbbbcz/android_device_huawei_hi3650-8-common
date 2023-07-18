@@ -121,6 +121,7 @@ function blob_fixup() {
             ;;
         vendor/lib*/hw/flp.default.so)
             "${PATCHELF}" --remove-needed "libicuuc.so" "${2}"
+            "${PATCHELF}" --add-needed "libutils_shim.so" "${2}"
             ;;
         vendor/lib*/hw/audio.primary.hi3650.so|vendor/lib*/libhivwservice.so)
 	    "${PATCHELF}" --add-needed "libprocessgroup.so" "${2}"
