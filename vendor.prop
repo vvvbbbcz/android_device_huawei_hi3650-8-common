@@ -48,6 +48,7 @@ ro.sys.umsdirtyratio=2
 persist.alloc_buffer_sync=true
 persist.texture_cache_opt=1
 debug.sf.latch_unsignaled=1
+debug.sf.enable_gl_backpressure=1
 persist.partial_update_support=1
 persist.rog_feature=1
 debug.renderengine.backend=threaded
