@@ -255,7 +255,7 @@ PRODUCT_PACKAGES += \
 # Shims
 PRODUCT_PACKAGES += \
     libbase_shim \
-    libui_shim \
+    libui_shim.vendor \
     libshim_hardware \
     libshim_log \
     libtinyxml2_shim.vendor
