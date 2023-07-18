@@ -118,6 +118,7 @@ persist.fw.force_adoptable=true
 
 # SurfaceFlinger
 debug.sf.disable_client_composition_cache=1
+debug.sf.enable_transaction_tracing=false
 service.sf.prime_shader_cache=0
 
 # Time
