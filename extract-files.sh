@@ -92,6 +92,9 @@ function blob_fixup() {
         vendor/lib64/libskia.so)
             "${PATCHELF}" --add-needed "libpiex_shim.so" "${2}"
             ;;
+        vendor/lib*/libHWCamCfgSvr.so)
+            "${PATCHELF}" --add-needed "libbinder_shim.so" "${2}"
+            ;;
         vendor/lib64/libFaceBeautyMeiwo*.so|vendor/lib64/libcontrastCal.so)
             sed -i 's|libgui.so|guivnd.so|g' "${2}"
             ;;
@@ -124,6 +127,9 @@ function blob_fixup() {
 	    ;;
         vendor/lib64/hw/hwcomposer.hi3650.so)
             "${PATCHELF}" --replace-needed "libui.so" "libui-v28.so" "${2}"
+            ;;
+        vendor/bin/CameraDaemon)
+            "${PATCHELF}" --add-needed "libbinder_shim.so" "${2}"
             ;;
         vendor/bin/gpsdaemon)
             "${PATCHELF}" --remove-needed "libicuuc.so" "${2}"

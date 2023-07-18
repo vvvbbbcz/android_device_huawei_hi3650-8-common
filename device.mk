@@ -259,6 +259,7 @@ PRODUCT_PACKAGES += \
 # Shims
 PRODUCT_PACKAGES += \
     libbase_shim \
+    libbinder_shim \
     libui_shim.vendor \
     libpiex_shim \
     libsensor_vendor \
