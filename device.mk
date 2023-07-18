@@ -285,6 +285,10 @@ PRODUCT_PACKAGES += \
     wpa_supplicant \
     wpa_supplicant.conf
 
+PRODUCT_PACKAGES += \
+    WifiOverlay \
+    TetheringConfigOverlay
+
 # Inherit broadcomm common WiFi configs
 include hardware/broadcom/wlan/bcmdhd/config/config-bcm.mk
 
