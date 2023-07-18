@@ -289,7 +289,8 @@ PRODUCT_PACKAGES += \
     libdng_sdk.vendor \
     libstdc++.vendor \
     libprotobuf-cpp-full-v29 \
-    libprotobuf-cpp-lite-v29
+    libprotobuf-cpp-lite-v29 \
+    libui-v28
 
 # WiFi
 PRODUCT_PACKAGES += \

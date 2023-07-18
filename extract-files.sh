@@ -118,14 +118,7 @@ function blob_fixup() {
 	    "${PATCHELF}" --add-needed "libprocessgroup.so" "${2}"
 	    ;;
         vendor/lib64/hw/hwcomposer.hi3650.so)
-            # SetPartialUpdates()
-            sed -i "s|\x78\xC8\xFF\x97\xE0\x03|\x1F\x20\x03\xD5\xE0\x03|g" "${2}"
-            # CalcOverlapLayersNum()
-            sed -i "s|\x7A\xC8\xFF\x97\x95\xC6|\x1F\x20\x03\xD5\x95\xC6|g" "${2}"
-            # CalcLayerMaskRects()
-            sed -i "s|\x77\xC8\xFF\x97\x88\x12|\x1F\x20\x03\xD5\x88\x12|g" "${2}"
-            # HasDamageRegion()
-            sed -i "s|\x90\xB6\xFF\x97\x60\x00|\x1F\x20\x03\xD5\x60\x00|g" "${2}"
+            "${PATCHELF}" --replace-needed "libui.so" "libui-v28.so" "${2}"
             ;;
         vendor/bin/gpsdaemon)
             "${PATCHELF}" --remove-needed "libicuuc.so" "${2}"
