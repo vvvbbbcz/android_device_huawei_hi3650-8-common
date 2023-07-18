@@ -85,9 +85,11 @@ function blob_fixup() {
             ;;
         vendor/lib*/libcamera_algo.so)
             sed -i 's|libgui.so|guivnd.so|g' "${2}"
+            "${PATCHELF}" --add-needed "libui_shim.so" "${2}"
             ;;
         vendor/lib*/libcamera_ivp.so)
             sed -i 's|libgui.so|guivnd.so|g' "${2}"
+            "${PATCHELF}" --add-needed "libui_shim.so" "${2}"
             ;;
         vendor/lib64/libskia.so)
             "${PATCHELF}" --add-needed "libpiex_shim.so" "${2}"
