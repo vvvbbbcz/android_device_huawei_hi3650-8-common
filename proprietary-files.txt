@@ -151,6 +151,10 @@ vendor/lib64/libmrc_cg_niceFood.so
 vendor/lib64/libmrc_cg_postprocess.so
 vendor/lib64/libmrc_cg_postprocess_ivp.so
 vendor/lib64/libmrc_cg_sz.so
+lib64/libskia.so:vendor/lib64/libskia.so
+lib64/libicuuc.so:vendor/lib64/libicuuc.so
+lib64/libft2.so:vendor/lib64/libft2.so
+lib64/libicui18n.so:vendor/lib64/libicui18n.so
 
 # Camera (Hardware)
 vendor/lib/hw/camera.hi3650.so

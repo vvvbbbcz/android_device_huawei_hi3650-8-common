@@ -66,16 +66,15 @@ function blob_fixup() {
         vendor/lib*/egl/libGLES_mali.so|vendor/lib*/hw/gralloc.hi3650.so)
             "${PATCHELF}" --add-needed "libutilscallstack.so" "${2}"
             ;;
-        vendor/lib64/hwcam/hwcam.hi3650.m.NEXT.so)
+        vendor/lib64/hwcam/hwcam.hi3650.m.*.so)
             sed -i 's|libgui.so|guivnd.so|g' "${2}"
-            "${PATCHELF}" --replace-needed "libskia.so" "libhwui.so" "${2}"
             "${PATCHELF}" --add-needed "libtinyxml2_shim.so" "${2}"
+            "${PATCHELF}" --add-needed "libshim_ui.so" "${2}"
             # NOP out assertOk() and return_status()
             "${SIGSCAN}" -p "e0 43 01 91 44 51 fa 97" -P "e0 43 01 91 1f 20 03 d5" -f "${2}"
             "${SIGSCAN}" -p "e0 43 01 91 45 51 fa 97" -P "e0 43 01 91 1f 20 03 d5" -f "${2}"
             ;;
         vendor/lib*/hw/camera.hi3650.so)
-            "${PATCHELF}" --replace-needed "libskia.so" "libhwui.so" "${2}"
             "${PATCHELF}" --add-needed "libui_shim.so" "${2}"
             ;;
         vendor/lib*/mediadrm/libwvdrmengine.so)
@@ -89,6 +88,9 @@ function blob_fixup() {
             ;;
         vendor/lib*/libcamera_ivp.so)
             sed -i 's|libgui.so|guivnd.so|g' "${2}"
+            ;;
+        vendor/lib64/libskia.so)
+            "${PATCHELF}" --add-needed "libpiex_shim.so" "${2}"
             ;;
         vendor/lib64/libFaceBeautyMeiwo*.so|vendor/lib64/libcontrastCal.so)
             sed -i 's|libgui.so|guivnd.so|g' "${2}"

@@ -260,9 +260,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libbase_shim \
     libui_shim.vendor \
+    libpiex_shim \
     libsensor_vendor \
     libshim_hardware \
     libshim_log \
+    libshim_ui \
     libtinyxml2_shim.vendor \
     guivnd
 
@@ -284,8 +286,8 @@ PRODUCT_PACKAGES += \
 
 # VNDK
 PRODUCT_PACKAGES += \
+    libdng_sdk.vendor \
     libstdc++.vendor \
-    libhwui.vendor \
     libprotobuf-cpp-full-v29 \
     libprotobuf-cpp-lite-v29
 
