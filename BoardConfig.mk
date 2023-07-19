@@ -99,6 +99,7 @@ TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
 # SEPolicy
 include device/hisi/sepolicy/SEPolicy.mk
+BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
 # Recovery
 BOARD_USES_FULL_RECOVERY_IMAGE := true
