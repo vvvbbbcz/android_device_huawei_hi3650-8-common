@@ -118,14 +118,12 @@ BOARD_ROOT_EXTRA_FOLDERS += \
     3rdmodem \
     3rdmodemnvm \
     3rdmodemnvmbkp \
-    cust \
     modem_fw \
     modem_log \
     modem_om \
     modemnvm_img \
     sec_storage \
-    splash2 \
-    version
+    splash2
 
 # SPL
 VENDOR_SECURITY_PATCH := 2018-07-01
