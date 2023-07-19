@@ -6,6 +6,9 @@
 
 DEVICE_PATH := device/huawei/next
 
+# APEX
+OVERRIDE_TARGET_FLATTEN_APEX := true
+
 # Arch
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
