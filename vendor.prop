@@ -4,6 +4,7 @@ ro.config.music_lp_vol=true
 persist.media.offload.enable=true
 ro.audio.offload_wakelock=false
 persist.media.lowlatency.enable=false
+ro.hardware.audio.primary=hisi_wrapper
 
 # Bluetooth
 ro.bt.bdaddr_path=/data/misc/bluedroid/macbt

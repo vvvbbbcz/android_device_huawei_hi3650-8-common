@@ -10,6 +10,7 @@ PRODUCT_AAPT_PREF_CONFIG := xhdpi
 
 # Audio
 PRODUCT_PACKAGES += \
+    audio.primary.hisi_wrapper \
     audio.bluetooth.default \
     audio.usb.default \
     audio.r_submix.default

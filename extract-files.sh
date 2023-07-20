@@ -129,7 +129,7 @@ function blob_fixup() {
             "${PATCHELF}" --remove-needed "libicuuc.so" "${2}"
             "${PATCHELF}" --add-needed "libutils_shim.so" "${2}"
             ;;
-        vendor/lib*/hw/audio.primary.hi3650.so|vendor/lib*/libhivwservice.so)
+        vendor/lib*/hw/audio.primary_hisi.hi3650.so|vendor/lib*/libhivwservice.so)
 	    "${PATCHELF}" --add-needed "libprocessgroup.so" "${2}"
 	    ;;
         vendor/lib64/hw/hwcomposer.hi3650.so)
