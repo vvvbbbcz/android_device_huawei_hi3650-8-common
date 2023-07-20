@@ -265,6 +265,7 @@ PRODUCT_PACKAGES += \
     libui_shim.vendor \
     libpiex_shim \
     libsensor_vendor \
+    libshim_hwcam \
     libshim_hardware \
     libshim_log \
     libshim_ui \
