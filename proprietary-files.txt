@@ -1155,6 +1155,7 @@ vendor/lib/libnvme.so
 vendor/lib64/libnvme.so
 
 # Oeminfo
+vendor/bin/oeminfo_nvm_server|4bbcf9000c0ec5eca461dadd89bfa1e0eae4b1ae
 vendor/bin/oeminfo_gamma
 vendor/lib/libBootloaderOeminfo.so
 vendor/lib/liboeminfo.so

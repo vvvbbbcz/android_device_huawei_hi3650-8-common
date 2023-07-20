@@ -28,6 +28,11 @@ on early-boot
     # eMMC FFU
     start hwemerffu
 
+on early-fs
+    # Oeminfo
+    wait /dev/block/bootdevice/by-name/oeminfo
+    start oeminfo_nvm
+
 on init
     symlink /dev/block/platform/hi_mci.0 /dev/block/bootdevice
 
@@ -364,6 +369,10 @@ service hivwserver /vendor/bin/hivwserver
     group audio inet net_bt net_bt_admin net_bw_acct system
 
 on boot
+    # Oeminfo
+    chmod 0666 /dev/socket/oeminfo_nvm
+    chown system system /dev/socket/oeminfo_nvm
+
     # Torch
     chown system system /sys/bus/platform/drivers/huawei,camcfgdev/guard_thermal
     chown system system /sys/class/leds/torch/brightness
@@ -972,3 +981,8 @@ service CameraDaemon /vendor/bin/CameraDaemon hi3650 ${ro.vendor.camera.platform
     class main
     user media
     group audio camera inet net_bt net_bt_admin net_bw_acct drmrpc mediadrm system
+
+service oeminfo_nvm /vendor/bin/oeminfo_nvm_server
+    class core
+    critical
+    ioprio rt 4
