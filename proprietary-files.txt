@@ -158,8 +158,11 @@ vendor/lib/vendor.huawei.hardware.camera.camResource@1.0.so
 vendor/lib/vendor.huawei.hardware.camera.camResource@1.1.so
 vendor/lib/vendor.huawei.hardware.camera.cfgsvr@1.0.so
 vendor/lib/vendor.huawei.hardware.camera.factory@1.0.so
+vendor/lib64/camera.device@1.0-impl.so:vendor/lib64/camera.device@1.0-impl-v27.so
+vendor/lib64/camera.device@3.2-impl.so:vendor/lib64/camera.device@3.2-impl-v27.so
 vendor/lib64/hw/CameraFactoryService.so
 vendor/lib64/hw/camera.hi3650.so
+vendor/lib64/hw/android.hardware.camera.provider@2.4-impl.so:vendor/lib64/hw/android.hardware.camera.provider@2.4-impl-hisi.so
 vendor/lib64/hw/vendor.huawei.hardware.camera.factory@1.0-impl.so
 vendor/lib64/vendor.huawei.hardware.camera.camResource@1.0.so
 vendor/lib64/vendor.huawei.hardware.camera.camResource@1.1.so

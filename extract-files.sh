@@ -66,6 +66,10 @@ function blob_fixup() {
         vendor/lib*/egl/libGLES_mali.so|vendor/lib*/hw/gralloc.hi3650.so)
             "${PATCHELF}" --add-needed "libutilscallstack.so" "${2}"
             ;;
+        vendor/lib64/hw/android.hardware.camera.provider@2.4-impl-hisi.so|vendor/lib64/camera.device@*-impl-v27.so)
+            "${PATCHELF}" --replace-needed "camera.device@1.0-impl.so" "camera.device@1.0-impl-v27.so" "${2}"
+            "${PATCHELF}" --replace-needed "camera.device@3.2-impl.so" "camera.device@3.2-impl-v27.so" "${2}"
+            ;;
         vendor/lib64/hwcam/hwcam.hi3650.m.*.so)
             sed -i 's|libgui.so|guivnd.so|g' "${2}"
             "${PATCHELF}" --add-needed "libtinyxml2_shim.so" "${2}"
