@@ -102,6 +102,9 @@ function blob_fixup() {
         vendor/lib64/libFaceBeautyMeiwo*.so|vendor/lib64/libcontrastCal.so)
             sed -i 's|libgui.so|guivnd.so|g' "${2}"
             ;;
+        vendor/lib64/hw/keystore.hi3650.so)
+            sed -i 's|/system/lib64/libcrypto.so|libcrypto.so\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00|g' "${2}"
+            ;;
         vendor/lib*/hw/vendor.huawei.hardware.hisupl@1.0-impl.so)
             # Respect the HMI's ID, which is hisupl
             sed -i 's|hisupl.hi1102|hisupl\x00\x00\x00\x00\x00\x00\x00|g' "${2}"
