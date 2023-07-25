@@ -128,6 +128,10 @@ PRODUCT_PACKAGES += \
 # HIDL
 PRODUCT_ENFORCE_VINTF_MANIFEST_OVERRIDE := true
 
+# IMS
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/privapp-permissions-com.huawei.ims.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-com.huawei.ims.xml
+
 # Keymaster
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@3.0-service \
@@ -265,10 +269,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libbase_shim \
     libbinder_shim \
+    libcutils_shim \
     libutils_shim.vendor \
     libui_shim.vendor \
     libpiex_shim \
     libsensor_vendor \
+    libshim_emcom \
     libshim_hwcam \
     libshim_hardware \
     libshim_log \
@@ -309,6 +315,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     WifiOverlay \
+    TelephonyOverlayHuawei \
     TetheringConfigOverlay
 
 # Inherit broadcomm common WiFi configs

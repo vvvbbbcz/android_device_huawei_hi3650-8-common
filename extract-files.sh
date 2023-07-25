@@ -63,6 +63,9 @@ function blob_fixup() {
         vendor/etc/perfgenius_*)
             sed -i 's/version="2.0"/version="1.0"/g' "${2}"
             ;;
+        lib64/libemcomutil.so)
+            "${PATCHELF}" --add-needed "libshim_emcom.so" "${2}"
+            ;;
         vendor/lib*/egl/libGLES_mali.so|vendor/lib*/hw/gralloc.hi3650.so)
             "${PATCHELF}" --add-needed "libutilscallstack.so" "${2}"
             ;;
