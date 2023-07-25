@@ -609,6 +609,7 @@ vendor/lib64/vendor.huawei.hardware.irsl@1.0.so
 vendor/etc/ir_config
 
 # Carrier Configs
+system/emui/base/global/ons.bin:vendor/etc/ons/ons.bin
 odm/hw_odm/ncfg/CONFIG.bin:odm/etc/ncfg/CONFIG.bin
 odm/hw_odm/ncfg/TEST_WH.ato:odm/etc/ncfg/TEST_WH.ato
 odm/hw_odm/ncfg/RIL_IN.ato:odm/etc/ncfg/RIL_IN.ato
