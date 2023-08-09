@@ -10,6 +10,9 @@
 /dev/esm                0660    system system
 /dev/rpmsg-hisi0        0600    media  media
 
+# GPS
+/dev/flp                0664    system system
+
 # Memory
 /dev/memory_throughput                 0660     system system
 /dev/memory_throughput_up_threshold    0660     system system
