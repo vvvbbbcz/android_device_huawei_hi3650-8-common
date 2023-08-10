@@ -78,12 +78,6 @@ function blob_fixup() {
             "${PATCHELF}" --replace-needed "camera.device@1.0-impl.so" "camera.device@1.0-impl-v27.so" "${2}"
             "${PATCHELF}" --replace-needed "camera.device@3.2-impl.so" "camera.device@3.2-impl-v27.so" "${2}"
             ;;
-        vendor/lib64/hwcam/hwcam.hi3650.m.*.so)
-            "${PATCHELF}" --replace-needed "libgui.so" "libshim_hwcam.so" "${2}"
-            # NOP out assertOk() and return_status()
-            "${SIGSCAN}" -p "e0 43 01 91 44 51 fa 97" -P "e0 43 01 91 1f 20 03 d5" -f "${2}"
-            "${SIGSCAN}" -p "e0 43 01 91 45 51 fa 97" -P "e0 43 01 91 1f 20 03 d5" -f "${2}"
-            ;;
         vendor/lib*/hw/camera.hi3650.so)
             "${PATCHELF}" --add-needed "libui_shim.so" "${2}"
             ;;
