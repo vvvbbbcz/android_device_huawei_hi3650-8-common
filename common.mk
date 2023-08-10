@@ -282,9 +282,6 @@ PRODUCT_PACKAGES += \
     libtinyxml2_shim.vendor \
     guivnd
 
-# Shipping API level
-PRODUCT_SHIPPING_API_LEVEL := 23
-
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
@@ -322,4 +319,4 @@ PRODUCT_PACKAGES += \
 include hardware/broadcom/wlan/bcmdhd/config/config-bcm.mk
 
 # Inherit the proprietary files
-$(call inherit-product, vendor/huawei/next/next-vendor.mk)
+$(call inherit-product, vendor/huawei/hi3650-8-common/hi3650-8-common-vendor.mk)

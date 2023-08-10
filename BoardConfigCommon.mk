@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/huawei/next
+COMMON_PATH := device/huawei/hi3650-8-common
 
 # APEX
 OVERRIDE_TARGET_FLATTEN_APEX := true
@@ -52,7 +52,6 @@ TARGET_RUNNING_WITHOUT_SYNC_FRAMEWORK := true
 
 # Display
 TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS := 0x2080000
-TARGET_SCREEN_DENSITY := 480
 
 # Filesystem
 BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
@@ -71,7 +70,7 @@ TARGET_RECOVERY_DEVICE_MODULES := init_hisi
 BOARD_KERNEL_IMAGE_NAME := Image.gz
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
-TARGET_KERNEL_SOURCE := kernel/huawei/hi3650
+TARGET_KERNEL_SOURCE := kernel/huawei/hi3650-8
 TARGET_KERNEL_CONFIG := merge_hi3650_defconfig
 TARGET_KERNEL_CLANG_VERSION := r416183b
 TARGET_KERNEL_CLANG_PATH := $(abspath .)/prebuilts/clang/kernel/$(HOST_PREBUILT_TAG)/clang-$(TARGET_KERNEL_CLANG_VERSION)
@@ -95,17 +94,17 @@ BOARD_VENDORIMAGE_PARTITION_SIZE := 637534208 # mmcblk0p57 (802816*1024)
 TARGET_BOARD_PLATFORM := hi3650
 
 # Properties
-TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
-TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
+TARGET_SYSTEM_PROP += $(COMMON_PATH)/system.prop
+TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor.prop
 
 # SEPolicy
 include device/hisi/sepolicy/SEPolicy.mk
-BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
+BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
 
 # Recovery
 BOARD_USES_FULL_RECOVERY_IMAGE := true
 TARGET_RECOVERY_PIXEL_FORMAT := "BGRA_8888"
-TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.hi3650
+TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/rootdir/etc/fstab.hi3650
 
 # Releasetools
 TARGET_RELEASETOOLS_EXTENSIONS := hardware/hisi/releasetools
@@ -132,8 +131,8 @@ PRODUCT_FULL_TREBLE_OVERRIDE := true
 PRODUCT_USE_VNDK_OVERRIDE := true
 
 # Vintf
-DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
-DEVICE_MATRIX_FILE := $(DEVICE_PATH)/compatibility_matrix.xml
+DEVICE_MANIFEST_FILE := $(COMMON_PATH)/manifest.xml
+DEVICE_MATRIX_FILE := $(COMMON_PATH)/compatibility_matrix.xml
 
 # Wifi
 BOARD_HOSTAPD_DRIVER := NL80211
@@ -145,4 +144,4 @@ WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Inherit the proprietary files
-include vendor/huawei/next/BoardConfigVendor.mk
+include vendor/huawei/hi3650-8-common/BoardConfigVendor.mk
