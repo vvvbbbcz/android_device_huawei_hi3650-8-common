@@ -287,6 +287,10 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/hisi
 
+# Touch
+PRODUCT_PACKAGES += \
+    vendor.lineage.touch@1.0-service.hisi
+
 # USB
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service.basic
