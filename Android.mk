@@ -10,7 +10,7 @@ ifneq ($(filter eva next,$(TARGET_DEVICE)),)
 include $(call all-makefiles-under,$(LOCAL_PATH))
 
 # EGL symlinks
-EGL_LIBS := libOpenCL.so libOpenCL.so.1 libOpenCL.so.1.1 hw/vulkan.hi6350.so
+EGL_LIBS := libOpenCL.so libOpenCL.so.1 libOpenCL.so.1.1 hw/vulkan.hi3650.so
 
 EGL_32_SYMLINKS := $(addprefix $(TARGET_OUT_VENDOR)/lib/,$(EGL_LIBS))
 $(EGL_32_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
