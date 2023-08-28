@@ -4,10 +4,6 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# AAPT
-PRODUCT_AAPT_CONFIG := normal xhdpi
-PRODUCT_AAPT_PREF_CONFIG := xhdpi
-
 # Audio
 PRODUCT_PACKAGES += \
     audio.primary.hisi_wrapper \
