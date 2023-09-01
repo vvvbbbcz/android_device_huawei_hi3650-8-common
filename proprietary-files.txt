@@ -1147,15 +1147,6 @@ vendor/lib64/hw/vendor.huawei.hardware.hivrar@1.0-impl.so
 vendor/lib64/hw/vr.hi3650.so
 vendor/lib64/vendor.huawei.hardware.hivrar@1.0.so
 
-# Vibrator (Hardware)
-vendor/bin/hw/vendor.huawei.hardware.hwvibrator@1.0-service
-vendor/etc/init/vendor.huawei.hardware.hwvibrator@1.0-service.rc
-vendor/lib/lib_vibrator.so
-vendor/lib/vendor.huawei.hardware.hwvibrator@1.0.so
-vendor/lib64/hw/vendor.huawei.hardware.hwvibrator@1.0-impl.so
-vendor/lib64/lib_vibrator.so
-vendor/lib64/vendor.huawei.hardware.hwvibrator@1.0.so
-
 # WiFi (Configs)
 vendor/etc/cfg_bkl_al00_hisi.ini
 vendor/etc/cfg_bkl_lx9_hisi.ini
