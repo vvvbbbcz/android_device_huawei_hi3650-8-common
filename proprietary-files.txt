@@ -271,15 +271,6 @@ vendor/lib64/libpf_customize_hisi.so
 vendor/lib64/libpf_oneimage_hisi.so
 vendor/lib64/libpf_rotate_hisi.so
 
-# Connectivity (Init)
-vendor/etc/init/connectivity/init.connectivity.bcm43455.rc
-vendor/etc/init/connectivity/init.connectivity.bcm4359.rc
-vendor/etc/init/connectivity/init.connectivity.bcm43xx.rc
-vendor/etc/init/connectivity/init.connectivity.gps.rc
-vendor/etc/init/connectivity/init.connectivity.hi1102.rc
-vendor/etc/init/connectivity/init.connectivity.hisi.rc
-vendor/etc/init/connectivity/init.recovery.hi1102.rc
-
 # DRM (Hardware)
 vendor/bin/hw/android.hardware.drm@1.0-service.widevine
 vendor/etc/init/android.hardware.drm@1.0-service.widevine.rc
