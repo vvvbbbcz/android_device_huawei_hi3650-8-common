@@ -1030,15 +1030,6 @@ vendor/lib64/vendor.huawei.hardware.iked@1.0.so
 vendor/lib/hw/keystore.hi3650.so
 vendor/lib64/hw/keystore.hi3650.so
 
-# Lights (Hardware)
-vendor/bin/hw/vendor.huawei.hardware.light@2.0-service
-vendor/etc/init/vendor.huawei.hardware.light@2.0-service.rc
-vendor/lib/hw/lights.default.so:vendor/lib/hw/lights.hi3650.so
-vendor/lib/vendor.huawei.hardware.light@2.0.so
-vendor/lib64/hw/lights.default.so:vendor/lib64/hw/lights.hi3650.so
-vendor/lib64/hw/vendor.huawei.hardware.light@2.0-impl.so
-vendor/lib64/vendor.huawei.hardware.light@2.0.so
-
 # Media
 vendor/lib/libVideoDenoise.so
 vendor/lib/libomx_vxd.so
