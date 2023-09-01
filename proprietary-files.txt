@@ -39,6 +39,10 @@ vendor/lib64/libbt-vendor.so
 vendor/etc/bluetooth/bt_vendor.conf
 
 # Camera
+lib64/libft2.so:vendor/lib64/libft2.so
+lib64/libicui18n.so:vendor/lib64/libicui18n.so
+lib64/libicuuc.so:vendor/lib64/libicuuc.so
+lib64/libskia.so:vendor/lib64/libskia.so
 odm/lib/libDocBeauty.so
 odm/lib/libFNVfbEngineLib.so
 odm/lib/libSFBE.so
@@ -109,10 +113,6 @@ vendor/lib64/libmrc_cg_niceFood.so
 vendor/lib64/libmrc_cg_postprocess.so
 vendor/lib64/libmrc_cg_postprocess_ivp.so
 vendor/lib64/libmrc_cg_sz.so
-lib64/libskia.so:vendor/lib64/libskia.so
-lib64/libicuuc.so:vendor/lib64/libicuuc.so
-lib64/libft2.so:vendor/lib64/libft2.so
-lib64/libicui18n.so:vendor/lib64/libicui18n.so
 
 # Camera (Hardware)
 vendor/lib/hw/camera.hi3650.so
@@ -124,8 +124,8 @@ vendor/lib/vendor.huawei.hardware.camera.factory@1.0.so
 vendor/lib64/camera.device@1.0-impl.so:vendor/lib64/camera.device@1.0-impl-v27.so
 vendor/lib64/camera.device@3.2-impl.so:vendor/lib64/camera.device@3.2-impl-v27.so
 vendor/lib64/hw/CameraFactoryService.so
-vendor/lib64/hw/camera.hi3650.so
 vendor/lib64/hw/android.hardware.camera.provider@2.4-impl.so:vendor/lib64/hw/android.hardware.camera.provider@2.4-impl-hisi.so
+vendor/lib64/hw/camera.hi3650.so
 vendor/lib64/hw/vendor.huawei.hardware.camera.factory@1.0-impl.so
 vendor/lib64/vendor.huawei.hardware.camera.camResource@1.0.so
 vendor/lib64/vendor.huawei.hardware.camera.camResource@1.1.so
@@ -161,98 +161,98 @@ vendor/lib64/vendor.huawei.hardware.irsl@1.0.so
 vendor/etc/ir_config
 
 # Carrier Configs
-system/emui/base/global/ons.bin:vendor/etc/ons/ons.bin
-odm/hw_odm/ncfg/CONFIG.bin:odm/etc/ncfg/CONFIG.bin
-odm/hw_odm/ncfg/TEST_WH.ato:odm/etc/ncfg/TEST_WH.ato
-odm/hw_odm/ncfg/RIL_IN.ato:odm/etc/ncfg/RIL_IN.ato
-odm/hw_odm/ncfg/TEST_XA.ato:odm/etc/ncfg/TEST_XA.ato
-odm/hw_odm/ncfg/TEST_BJ.ato:odm/etc/ncfg/TEST_BJ.ato
-odm/hw_odm/ncfg/TEST_SH.ato:odm/etc/ncfg/TEST_SH.ato
-odm/hw_odm/ncfg/feature_index.xml:odm/etc/ncfg/feature_index.xml
-odm/hw_odm/ncfg/IDEA_IN.ato:odm/etc/ncfg/IDEA_IN.ato
-odm/hw_odm/ncfg/TEST.ato:odm/etc/ncfg/TEST.ato
-odm/hw_odm/ncfg/VDF_IN.ato:odm/etc/ncfg/VDF_IN.ato
-odm/hw_odm/ncfg/AIRTEL_IN.ato:odm/etc/ncfg/AIRTEL_IN.ato
 odm/hw_odm/BASE.xml:odm/etc/BASE.xml
-odm/hw_odm/NXT-L09/ncfg/il/hotmobile/COMMON.bin:odm/etc/NXT-L09/ncfg/il/hotmobile/COMMON.bin
-odm/hw_odm/NXT-L09/ncfg/il/openmarket/COMMON.bin:odm/etc/NXT-L09/ncfg/il/openmarket/COMMON.bin
-odm/hw_odm/NXT-L09/ncfg/il/cellcom/COMMON.bin:odm/etc/NXT-L09/ncfg/il/cellcom/COMMON.bin
-odm/hw_odm/NXT-L09/ncfg/il/orange/COMMON.bin:odm/etc/NXT-L09/ncfg/il/orange/COMMON.bin
-odm/hw_odm/NXT-L09/ncfg/il/pelephone/COMMON.bin:odm/etc/NXT-L09/ncfg/il/pelephone/COMMON.bin
-odm/hw_odm/NXT-L09/ncfg/movistar/co/COMMON.bin:odm/etc/NXT-L09/ncfg/movistar/co/COMMON.bin
-odm/hw_odm/NXT-L09/ncfg/tigo/bo/COMMON.bin:odm/etc/NXT-L09/ncfg/tigo/bo/COMMON.bin
-odm/hw_odm/NXT-L09/ncfg/tigo/la/COMMON.bin:odm/etc/NXT-L09/ncfg/tigo/la/COMMON.bin
+odm/hw_odm/NXT-L09/ncfg/2degrees/nz/COMMON.bin:odm/etc/NXT-L09/ncfg/2degrees/nz/COMMON.bin
+odm/hw_odm/NXT-L09/ncfg/AIRTEL_IN.ato:odm/etc/NXT-L09/ncfg/AIRTEL_IN.ato
+odm/hw_odm/NXT-L09/ncfg/COMMON.bin:odm/etc/NXT-L09/ncfg/COMMON.bin
 odm/hw_odm/NXT-L09/ncfg/CONFIG.bin:odm/etc/NXT-L09/ncfg/CONFIG.bin
-odm/hw_odm/NXT-L09/ncfg/telstra/au/COMMON.bin:odm/etc/NXT-L09/ncfg/telstra/au/COMMON.bin
-odm/hw_odm/NXT-L09/ncfg/telefonica/la/COMMON.bin:odm/etc/NXT-L09/ncfg/telefonica/la/COMMON.bin
-odm/hw_odm/NXT-L09/ncfg/sfr/fr/COMMON.bin:odm/etc/NXT-L09/ncfg/sfr/fr/COMMON.bin
-odm/hw_odm/NXT-L09/ncfg/dt/tr/COMMON.bin:odm/etc/NXT-L09/ncfg/dt/tr/COMMON.bin
-odm/hw_odm/NXT-L09/ncfg/TEST_WH.ato:odm/etc/NXT-L09/ncfg/TEST_WH.ato
-odm/hw_odm/NXT-L09/ncfg/vodacom/za/COMMON.bin:odm/etc/NXT-L09/ncfg/vodacom/za/COMMON.bin
+odm/hw_odm/NXT-L09/ncfg/IDEA_IN.ato:odm/etc/NXT-L09/ncfg/IDEA_IN.ato
 odm/hw_odm/NXT-L09/ncfg/RIL_IN.ato:odm/etc/NXT-L09/ncfg/RIL_IN.ato
-odm/hw_odm/NXT-L09/ncfg/channelvolte/la/COMMON.bin:odm/etc/NXT-L09/ncfg/channelvolte/la/COMMON.bin
-odm/hw_odm/NXT-L09/ncfg/meo/pt/COMMON.bin:odm/etc/NXT-L09/ncfg/meo/pt/COMMON.bin
-odm/hw_odm/NXT-L09/ncfg/entel/la/COMMON.bin:odm/etc/NXT-L09/ncfg/entel/la/COMMON.bin
-odm/hw_odm/NXT-L09/ncfg/TEST_XA.ato:odm/etc/NXT-L09/ncfg/TEST_XA.ato
-odm/hw_odm/NXT-L09/ncfg/wom/cl/COMMON.bin:odm/etc/NXT-L09/ncfg/wom/cl/COMMON.bin
-odm/hw_odm/NXT-L09/ncfg/wind/it/COMMON.bin:odm/etc/NXT-L09/ncfg/wind/it/COMMON.bin
+odm/hw_odm/NXT-L09/ncfg/TEST.ato:odm/etc/NXT-L09/ncfg/TEST.ato
 odm/hw_odm/NXT-L09/ncfg/TEST_BJ.ato:odm/etc/NXT-L09/ncfg/TEST_BJ.ato
-odm/hw_odm/NXT-L09/ncfg/vdf2d/nz/COMMON.bin:odm/etc/NXT-L09/ncfg/vdf2d/nz/COMMON.bin
-odm/hw_odm/NXT-L09/ncfg/h3g/it/COMMON.bin:odm/etc/NXT-L09/ncfg/h3g/it/COMMON.bin
+odm/hw_odm/NXT-L09/ncfg/TEST_SH.ato:odm/etc/NXT-L09/ncfg/TEST_SH.ato
+odm/hw_odm/NXT-L09/ncfg/TEST_WH.ato:odm/etc/NXT-L09/ncfg/TEST_WH.ato
+odm/hw_odm/NXT-L09/ncfg/TEST_XA.ato:odm/etc/NXT-L09/ncfg/TEST_XA.ato
+odm/hw_odm/NXT-L09/ncfg/VDF_IN.ato:odm/etc/NXT-L09/ncfg/VDF_IN.ato
+odm/hw_odm/NXT-L09/ncfg/bytel/fr/COMMON.bin:odm/etc/NXT-L09/ncfg/bytel/fr/COMMON.bin
+odm/hw_odm/NXT-L09/ncfg/channel/tw/COMMON.bin:odm/etc/NXT-L09/ncfg/channel/tw/COMMON.bin
+odm/hw_odm/NXT-L09/ncfg/channelvolte/la/COMMON.bin:odm/etc/NXT-L09/ncfg/channelvolte/la/COMMON.bin
+odm/hw_odm/NXT-L09/ncfg/claro/la/COMMON.bin:odm/etc/NXT-L09/ncfg/claro/la/COMMON.bin
+odm/hw_odm/NXT-L09/ncfg/dt/tr/COMMON.bin:odm/etc/NXT-L09/ncfg/dt/tr/COMMON.bin
+odm/hw_odm/NXT-L09/ncfg/entel/la/COMMON.bin:odm/etc/NXT-L09/ncfg/entel/la/COMMON.bin
 odm/hw_odm/NXT-L09/ncfg/h3g/at/COMMON.bin:odm/etc/NXT-L09/ncfg/h3g/at/COMMON.bin
 odm/hw_odm/NXT-L09/ncfg/h3g/ie/COMMON.bin:odm/etc/NXT-L09/ncfg/h3g/ie/COMMON.bin
-odm/hw_odm/NXT-L09/ncfg/vha/au/COMMON.bin:odm/etc/NXT-L09/ncfg/vha/au/COMMON.bin
-odm/hw_odm/NXT-L09/ncfg/TEST_SH.ato:odm/etc/NXT-L09/ncfg/TEST_SH.ato
-odm/hw_odm/NXT-L09/ncfg/2degrees/nz/COMMON.bin:odm/etc/NXT-L09/ncfg/2degrees/nz/COMMON.bin
-odm/hw_odm/NXT-L09/ncfg/COMMON.bin:odm/etc/NXT-L09/ncfg/COMMON.bin
-odm/hw_odm/NXT-L09/ncfg/polkomtel/pl/COMMON.bin:odm/etc/NXT-L09/ncfg/polkomtel/pl/COMMON.bin
-odm/hw_odm/NXT-L09/ncfg/telcel/mx/COMMON.bin:odm/etc/NXT-L09/ncfg/telcel/mx/COMMON.bin
-odm/hw_odm/NXT-L09/ncfg/ti/it/COMMON.bin:odm/etc/NXT-L09/ncfg/ti/it/COMMON.bin
-odm/hw_odm/NXT-L09/ncfg/nos/pt/COMMON.bin:odm/etc/NXT-L09/ncfg/nos/pt/COMMON.bin
-odm/hw_odm/NXT-L09/ncfg/mtn/za/COMMON.bin:odm/etc/NXT-L09/ncfg/mtn/za/COMMON.bin
-odm/hw_odm/NXT-L09/ncfg/IDEA_IN.ato:odm/etc/NXT-L09/ncfg/IDEA_IN.ato
-odm/hw_odm/NXT-L09/ncfg/iusacell/mx/COMMON.bin:odm/etc/NXT-L09/ncfg/iusacell/mx/COMMON.bin
-odm/hw_odm/NXT-L09/ncfg/spark/nz/COMMON.bin:odm/etc/NXT-L09/ncfg/spark/nz/COMMON.bin
-odm/hw_odm/NXT-L09/ncfg/TEST.ato:odm/etc/NXT-L09/ncfg/TEST.ato
-odm/hw_odm/NXT-L09/ncfg/p4/pl/COMMON.bin:odm/etc/NXT-L09/ncfg/p4/pl/COMMON.bin
-odm/hw_odm/NXT-L09/ncfg/hw/spcseas/COMMON.bin:odm/etc/NXT-L09/ncfg/hw/spcseas/COMMON.bin
+odm/hw_odm/NXT-L09/ncfg/h3g/it/COMMON.bin:odm/etc/NXT-L09/ncfg/h3g/it/COMMON.bin
 odm/hw_odm/NXT-L09/ncfg/hw/default/COMMON.bin:odm/etc/NXT-L09/ncfg/hw/default/COMMON.bin
-odm/hw_odm/NXT-L09/ncfg/hw/meafnaf/COMMON.bin:odm/etc/NXT-L09/ncfg/hw/meafnaf/COMMON.bin
-odm/hw_odm/NXT-L09/ncfg/hw/normal/COMMON.bin:odm/etc/NXT-L09/ncfg/hw/normal/COMMON.bin
 odm/hw_odm/NXT-L09/ncfg/hw/eu/COMMON.bin:odm/etc/NXT-L09/ncfg/hw/eu/COMMON.bin
 odm/hw_odm/NXT-L09/ncfg/hw/la/COMMON.bin:odm/etc/NXT-L09/ncfg/hw/la/COMMON.bin
-odm/hw_odm/NXT-L09/ncfg/VDF_IN.ato:odm/etc/NXT-L09/ncfg/VDF_IN.ato
-odm/hw_odm/NXT-L09/ncfg/channel/tw/COMMON.bin:odm/etc/NXT-L09/ncfg/channel/tw/COMMON.bin
-odm/hw_odm/NXT-L09/ncfg/AIRTEL_IN.ato:odm/etc/NXT-L09/ncfg/AIRTEL_IN.ato
-odm/hw_odm/NXT-L09/ncfg/bytel/fr/COMMON.bin:odm/etc/NXT-L09/ncfg/bytel/fr/COMMON.bin
-odm/hw_odm/NXT-L09/ncfg/claro/la/COMMON.bin:odm/etc/NXT-L09/ncfg/claro/la/COMMON.bin
-odm/hw_odm/NXT-L29/ncfg/mts/by/COMMON.bin:odm/etc/NXT-L29/ncfg/mts/by/COMMON.bin
-odm/hw_odm/NXT-L29/ncfg/CONFIG.bin:odm/etc/NXT-L29/ncfg/CONFIG.bin
-odm/hw_odm/NXT-L29/ncfg/TEST_WH.ato:odm/etc/NXT-L29/ncfg/TEST_WH.ato
-odm/hw_odm/NXT-L29/ncfg/RIL_IN.ato:odm/etc/NXT-L29/ncfg/RIL_IN.ato
-odm/hw_odm/NXT-L29/ncfg/channelvolte/la/COMMON.bin:odm/etc/NXT-L29/ncfg/channelvolte/la/COMMON.bin
-odm/hw_odm/NXT-L29/ncfg/TEST_XA.ato:odm/etc/NXT-L29/ncfg/TEST_XA.ato
-odm/hw_odm/NXT-L29/ncfg/cmcc/cn/COMMON.bin:odm/etc/NXT-L29/ncfg/cmcc/cn/COMMON.bin
-odm/hw_odm/NXT-L29/ncfg/TEST_BJ.ato:odm/etc/NXT-L29/ncfg/TEST_BJ.ato
-odm/hw_odm/NXT-L29/ncfg/dualcu/cn/COMMON.bin:odm/etc/NXT-L29/ncfg/dualcu/cn/COMMON.bin
-odm/hw_odm/NXT-L29/ncfg/cmcciot/cn/COMMON.bin:odm/etc/NXT-L29/ncfg/cmcciot/cn/COMMON.bin
-odm/hw_odm/NXT-L29/ncfg/dualcucta/cn/COMMON.bin:odm/etc/NXT-L29/ncfg/dualcucta/cn/COMMON.bin
-odm/hw_odm/NXT-L29/ncfg/TEST_SH.ato:odm/etc/NXT-L29/ncfg/TEST_SH.ato
+odm/hw_odm/NXT-L09/ncfg/hw/meafnaf/COMMON.bin:odm/etc/NXT-L09/ncfg/hw/meafnaf/COMMON.bin
+odm/hw_odm/NXT-L09/ncfg/hw/normal/COMMON.bin:odm/etc/NXT-L09/ncfg/hw/normal/COMMON.bin
+odm/hw_odm/NXT-L09/ncfg/hw/spcseas/COMMON.bin:odm/etc/NXT-L09/ncfg/hw/spcseas/COMMON.bin
+odm/hw_odm/NXT-L09/ncfg/il/cellcom/COMMON.bin:odm/etc/NXT-L09/ncfg/il/cellcom/COMMON.bin
+odm/hw_odm/NXT-L09/ncfg/il/hotmobile/COMMON.bin:odm/etc/NXT-L09/ncfg/il/hotmobile/COMMON.bin
+odm/hw_odm/NXT-L09/ncfg/il/openmarket/COMMON.bin:odm/etc/NXT-L09/ncfg/il/openmarket/COMMON.bin
+odm/hw_odm/NXT-L09/ncfg/il/orange/COMMON.bin:odm/etc/NXT-L09/ncfg/il/orange/COMMON.bin
+odm/hw_odm/NXT-L09/ncfg/il/pelephone/COMMON.bin:odm/etc/NXT-L09/ncfg/il/pelephone/COMMON.bin
+odm/hw_odm/NXT-L09/ncfg/iusacell/mx/COMMON.bin:odm/etc/NXT-L09/ncfg/iusacell/mx/COMMON.bin
+odm/hw_odm/NXT-L09/ncfg/meo/pt/COMMON.bin:odm/etc/NXT-L09/ncfg/meo/pt/COMMON.bin
+odm/hw_odm/NXT-L09/ncfg/movistar/co/COMMON.bin:odm/etc/NXT-L09/ncfg/movistar/co/COMMON.bin
+odm/hw_odm/NXT-L09/ncfg/mtn/za/COMMON.bin:odm/etc/NXT-L09/ncfg/mtn/za/COMMON.bin
+odm/hw_odm/NXT-L09/ncfg/nos/pt/COMMON.bin:odm/etc/NXT-L09/ncfg/nos/pt/COMMON.bin
+odm/hw_odm/NXT-L09/ncfg/p4/pl/COMMON.bin:odm/etc/NXT-L09/ncfg/p4/pl/COMMON.bin
+odm/hw_odm/NXT-L09/ncfg/polkomtel/pl/COMMON.bin:odm/etc/NXT-L09/ncfg/polkomtel/pl/COMMON.bin
+odm/hw_odm/NXT-L09/ncfg/sfr/fr/COMMON.bin:odm/etc/NXT-L09/ncfg/sfr/fr/COMMON.bin
+odm/hw_odm/NXT-L09/ncfg/spark/nz/COMMON.bin:odm/etc/NXT-L09/ncfg/spark/nz/COMMON.bin
+odm/hw_odm/NXT-L09/ncfg/telcel/mx/COMMON.bin:odm/etc/NXT-L09/ncfg/telcel/mx/COMMON.bin
+odm/hw_odm/NXT-L09/ncfg/telefonica/la/COMMON.bin:odm/etc/NXT-L09/ncfg/telefonica/la/COMMON.bin
+odm/hw_odm/NXT-L09/ncfg/telstra/au/COMMON.bin:odm/etc/NXT-L09/ncfg/telstra/au/COMMON.bin
+odm/hw_odm/NXT-L09/ncfg/ti/it/COMMON.bin:odm/etc/NXT-L09/ncfg/ti/it/COMMON.bin
+odm/hw_odm/NXT-L09/ncfg/tigo/bo/COMMON.bin:odm/etc/NXT-L09/ncfg/tigo/bo/COMMON.bin
+odm/hw_odm/NXT-L09/ncfg/tigo/la/COMMON.bin:odm/etc/NXT-L09/ncfg/tigo/la/COMMON.bin
+odm/hw_odm/NXT-L09/ncfg/vdf2d/nz/COMMON.bin:odm/etc/NXT-L09/ncfg/vdf2d/nz/COMMON.bin
+odm/hw_odm/NXT-L09/ncfg/vha/au/COMMON.bin:odm/etc/NXT-L09/ncfg/vha/au/COMMON.bin
+odm/hw_odm/NXT-L09/ncfg/vodacom/za/COMMON.bin:odm/etc/NXT-L09/ncfg/vodacom/za/COMMON.bin
+odm/hw_odm/NXT-L09/ncfg/wind/it/COMMON.bin:odm/etc/NXT-L09/ncfg/wind/it/COMMON.bin
+odm/hw_odm/NXT-L09/ncfg/wom/cl/COMMON.bin:odm/etc/NXT-L09/ncfg/wom/cl/COMMON.bin
+odm/hw_odm/NXT-L29/ncfg/AIRTEL_IN.ato:odm/etc/NXT-L29/ncfg/AIRTEL_IN.ato
 odm/hw_odm/NXT-L29/ncfg/COMMON.bin:odm/etc/NXT-L29/ncfg/COMMON.bin
-odm/hw_odm/NXT-L29/ncfg/cmcccta/cn/COMMON.bin:odm/etc/NXT-L29/ncfg/cmcccta/cn/COMMON.bin
-odm/hw_odm/NXT-L29/ncfg/cmccwhtp/cn/COMMON.bin:odm/etc/NXT-L29/ncfg/cmccwhtp/cn/COMMON.bin
+odm/hw_odm/NXT-L29/ncfg/CONFIG.bin:odm/etc/NXT-L29/ncfg/CONFIG.bin
 odm/hw_odm/NXT-L29/ncfg/IDEA_IN.ato:odm/etc/NXT-L29/ncfg/IDEA_IN.ato
+odm/hw_odm/NXT-L29/ncfg/RIL_IN.ato:odm/etc/NXT-L29/ncfg/RIL_IN.ato
 odm/hw_odm/NXT-L29/ncfg/TEST.ato:odm/etc/NXT-L29/ncfg/TEST.ato
-odm/hw_odm/NXT-L29/ncfg/hw/spcseas/COMMON.bin:odm/etc/NXT-L29/ncfg/hw/spcseas/COMMON.bin
-odm/hw_odm/NXT-L29/ncfg/hw/normaldb/COMMON.bin:odm/etc/NXT-L29/ncfg/hw/normaldb/COMMON.bin
-odm/hw_odm/NXT-L29/ncfg/hw/default/COMMON.bin:odm/etc/NXT-L29/ncfg/hw/default/COMMON.bin
-odm/hw_odm/NXT-L29/ncfg/hw/meafnaf/COMMON.bin:odm/etc/NXT-L29/ncfg/hw/meafnaf/COMMON.bin
-odm/hw_odm/NXT-L29/ncfg/hw/eu/COMMON.bin:odm/etc/NXT-L29/ncfg/hw/eu/COMMON.bin
-odm/hw_odm/NXT-L29/ncfg/hw/ru/COMMON.bin:odm/etc/NXT-L29/ncfg/hw/ru/COMMON.bin
-odm/hw_odm/NXT-L29/ncfg/hw/la/COMMON.bin:odm/etc/NXT-L29/ncfg/hw/la/COMMON.bin
+odm/hw_odm/NXT-L29/ncfg/TEST_BJ.ato:odm/etc/NXT-L29/ncfg/TEST_BJ.ato
+odm/hw_odm/NXT-L29/ncfg/TEST_SH.ato:odm/etc/NXT-L29/ncfg/TEST_SH.ato
+odm/hw_odm/NXT-L29/ncfg/TEST_WH.ato:odm/etc/NXT-L29/ncfg/TEST_WH.ato
+odm/hw_odm/NXT-L29/ncfg/TEST_XA.ato:odm/etc/NXT-L29/ncfg/TEST_XA.ato
 odm/hw_odm/NXT-L29/ncfg/VDF_IN.ato:odm/etc/NXT-L29/ncfg/VDF_IN.ato
 odm/hw_odm/NXT-L29/ncfg/channel/au/COMMON.bin:odm/etc/NXT-L29/ncfg/channel/au/COMMON.bin
-odm/hw_odm/NXT-L29/ncfg/AIRTEL_IN.ato:odm/etc/NXT-L29/ncfg/AIRTEL_IN.ato
+odm/hw_odm/NXT-L29/ncfg/channelvolte/la/COMMON.bin:odm/etc/NXT-L29/ncfg/channelvolte/la/COMMON.bin
+odm/hw_odm/NXT-L29/ncfg/cmcc/cn/COMMON.bin:odm/etc/NXT-L29/ncfg/cmcc/cn/COMMON.bin
+odm/hw_odm/NXT-L29/ncfg/cmcccta/cn/COMMON.bin:odm/etc/NXT-L29/ncfg/cmcccta/cn/COMMON.bin
+odm/hw_odm/NXT-L29/ncfg/cmcciot/cn/COMMON.bin:odm/etc/NXT-L29/ncfg/cmcciot/cn/COMMON.bin
+odm/hw_odm/NXT-L29/ncfg/cmccwhtp/cn/COMMON.bin:odm/etc/NXT-L29/ncfg/cmccwhtp/cn/COMMON.bin
+odm/hw_odm/NXT-L29/ncfg/dualcu/cn/COMMON.bin:odm/etc/NXT-L29/ncfg/dualcu/cn/COMMON.bin
+odm/hw_odm/NXT-L29/ncfg/dualcucta/cn/COMMON.bin:odm/etc/NXT-L29/ncfg/dualcucta/cn/COMMON.bin
+odm/hw_odm/NXT-L29/ncfg/hw/default/COMMON.bin:odm/etc/NXT-L29/ncfg/hw/default/COMMON.bin
+odm/hw_odm/NXT-L29/ncfg/hw/eu/COMMON.bin:odm/etc/NXT-L29/ncfg/hw/eu/COMMON.bin
+odm/hw_odm/NXT-L29/ncfg/hw/la/COMMON.bin:odm/etc/NXT-L29/ncfg/hw/la/COMMON.bin
+odm/hw_odm/NXT-L29/ncfg/hw/meafnaf/COMMON.bin:odm/etc/NXT-L29/ncfg/hw/meafnaf/COMMON.bin
+odm/hw_odm/NXT-L29/ncfg/hw/normaldb/COMMON.bin:odm/etc/NXT-L29/ncfg/hw/normaldb/COMMON.bin
+odm/hw_odm/NXT-L29/ncfg/hw/ru/COMMON.bin:odm/etc/NXT-L29/ncfg/hw/ru/COMMON.bin
+odm/hw_odm/NXT-L29/ncfg/hw/spcseas/COMMON.bin:odm/etc/NXT-L29/ncfg/hw/spcseas/COMMON.bin
+odm/hw_odm/NXT-L29/ncfg/mts/by/COMMON.bin:odm/etc/NXT-L29/ncfg/mts/by/COMMON.bin
+odm/hw_odm/ncfg/AIRTEL_IN.ato:odm/etc/ncfg/AIRTEL_IN.ato
+odm/hw_odm/ncfg/CONFIG.bin:odm/etc/ncfg/CONFIG.bin
+odm/hw_odm/ncfg/IDEA_IN.ato:odm/etc/ncfg/IDEA_IN.ato
+odm/hw_odm/ncfg/RIL_IN.ato:odm/etc/ncfg/RIL_IN.ato
+odm/hw_odm/ncfg/TEST.ato:odm/etc/ncfg/TEST.ato
+odm/hw_odm/ncfg/TEST_BJ.ato:odm/etc/ncfg/TEST_BJ.ato
+odm/hw_odm/ncfg/TEST_SH.ato:odm/etc/ncfg/TEST_SH.ato
+odm/hw_odm/ncfg/TEST_WH.ato:odm/etc/ncfg/TEST_WH.ato
+odm/hw_odm/ncfg/TEST_XA.ato:odm/etc/ncfg/TEST_XA.ato
+odm/hw_odm/ncfg/VDF_IN.ato:odm/etc/ncfg/VDF_IN.ato
+odm/hw_odm/ncfg/feature_index.xml:odm/etc/ncfg/feature_index.xml
+system/emui/base/global/ons.bin:vendor/etc/ons/ons.bin
 
 # Connectivity
 vendor/bin/modemlogcat_lte
@@ -422,10 +422,12 @@ vendor/bin/lhd4774cl
 vendor/xbin/gnss_watchlssd_thirdparty
 
 # GPS (Configs)
+vendor/etc/geoloc.conf
 vendor/etc/gnss/config/gnss_lss_config_thirdparty.bin
 vendor/etc/gnss/config/gnss_lss_rfg_key_thirdparty.pem
 vendor/etc/gnss/config/gnss_lss_slp_thirdparty.p12
 vendor/etc/gnss/config/gnss_suplconfig_hisi.xml
+vendor/etc/gnss/gnss_lss_thirdparty.conf
 vendor/etc/gnss/rmd/c/a_1
 vendor/etc/gnss/rmd/c/aindex.bin
 vendor/etc/gnss/rmd/e/a_1
@@ -439,10 +441,6 @@ vendor/etc/gnss/rmd/t/aindex.bin
 vendor/etc/gnss/security/gnss_entel_hisi.bks
 vendor/etc/gnss/security/gnss_iusacell_hisi.bks
 vendor/etc/gnss/security/gnss_vodafone_hisi.bks
-vendor/etc/gnss/gnss_lss_thirdparty.conf
-vendor/etc/hcs/opencl/sgemm_32_v2
-vendor/etc/hcs/opencl/sgemm_64_v2
-vendor/etc/geoloc.conf
 vendor/etc/goldeneye_config.xml
 vendor/etc/gps47531config.xml
 vendor/etc/gps47531config_beta.xml
@@ -452,6 +450,8 @@ vendor/etc/gps4774config.xml
 vendor/etc/gps4774config_beta.xml
 vendor/etc/gps4774config_cl.xml
 vendor/etc/gps4774config_cl_beta.xml
+vendor/etc/hcs/opencl/sgemm_32_v2
+vendor/etc/hcs/opencl/sgemm_64_v2
 vendor/etc/higeo.conf
 vendor/etc/higeo_beta.conf
 vendor/etc/libgps4774.conf
@@ -475,12 +475,12 @@ vendor/lib/hw/vendor.huawei.hardware.graphics.displayeffect@1.0-impl.so
 vendor/lib/vendor.huawei.hardware.graphics.displayeffect@1.0.so
 vendor/lib/vendor.huawei.hardware.hwdisplay.displayengine@1.0.so
 vendor/lib/vendor.huawei.hardware.hwdisplay@1.0.so
+vendor/lib64/displayeffect.hi3650.so
 vendor/lib64/hw/libhwdisplay.default.so
 vendor/lib64/hw/vendor.huawei.hardware.graphics.displayeffect@1.0-impl.so
 vendor/lib64/hw/vendor.huawei.hardware.graphics.mediacomm@2.0-impl.so
 vendor/lib64/hw/vendor.huawei.hardware.hwdisplay.displayengine@1.0-impl.so
 vendor/lib64/hw/vendor.huawei.hardware.hwdisplay@1.0-impl.so
-vendor/lib64/displayeffect.hi3650.so
 vendor/lib64/vendor.huawei.hardware.graphics.displayeffect@1.0.so
 vendor/lib64/vendor.huawei.hardware.graphics.gpucommon@1.0.so
 vendor/lib64/vendor.huawei.hardware.graphics.mediacomm@2.0.so
@@ -525,10 +525,6 @@ vendor/lib/egl/libGLES_mali.so
 vendor/lib64/egl/libGLES_mali.so
 
 # IMS
-vendor/bin/hivwserver
--framework/hwTelephony-common.jar
--framework/hwframework.jar
--framework/hwEmui.jar
 -app/HwIms/HwIms.apk:priv-app/HwIms/HwIms.apk
 app/HwIms/lib/arm64/libHME-Video.so:priv-app/HwIms/lib/arm64/libHME-Video.so
 app/HwIms/lib/arm64/libVT80.so:priv-app/HwIms/lib/arm64/libVT80.so
@@ -544,17 +540,13 @@ app/HwIms/lib/arm64/libssltsc.so:priv-app/HwIms/lib/arm64/libssltsc.so
 app/HwIms/lib/arm64/libtls_default.so:priv-app/HwIms/lib/arm64/libtls_default.so
 app/HwIms/lib/arm64/libut.so:priv-app/HwIms/lib/arm64/libut.so
 app/HwIms/lib/arm64/libvsc.so:priv-app/HwIms/lib/arm64/libvsc.so
+-framework/hwEmui.jar
+-framework/hwTelephony-common.jar
+-framework/hwframework.jar
+vendor/bin/hivwserver
 
 # Emcom
 bin/emcomd
-lib64/libemcomutil.so
-lib64/libxengine.so
-lib64/libsmartcare.so
-lib64/libsmartcareSDK.so
-lib64/libhuaweicust.so
-lib64/libc_secshared.so
-vendor/lib/libhivwservice.so
-vendor/lib64/libhivwservice.so
 emui/base/emcom/carrierconfig/carrier_config_00101.xml
 emui/base/emcom/carrierconfig/carrier_config_20201.xml
 emui/base/emcom/carrierconfig/carrier_config_20205.xml
@@ -1014,28 +1006,36 @@ emui/base/emcom/emcomctr/xengine.xml
 emui/base/emcom/noncell/bt_interop.xml
 emui/base/emcom/noncell/device_guide.json
 emui/base/emcom/noncell/version.txt
+lib64/libc_secshared.so
+lib64/libemcomutil.so
+lib64/libhuaweicust.so
+lib64/libsmartcare.so
+lib64/libsmartcareSDK.so
+lib64/libxengine.so
+vendor/lib/libhivwservice.so
+vendor/lib64/libhivwservice.so
 
 # IKED
 vendor/bin/iked
-vendor/lib/vendor.huawei.hardware.iked@1.0.so
-vendor/lib64/vendor.huawei.hardware.iked@1.0.so
 vendor/etc/ikedconfig/default.conf
 vendor/etc/ikedconfig/ikedconfig.ini
 vendor/etc/ikedconfig/racoon2.conf
 vendor/etc/ikedconfig/tunnel_ike.conf
 vendor/etc/ikedconfig/tunnel_ike_natt.conf
 vendor/etc/ikedconfig/vals.conf
+vendor/lib/vendor.huawei.hardware.iked@1.0.so
+vendor/lib64/vendor.huawei.hardware.iked@1.0.so
 
 # Keymaster (Hardware)
 vendor/lib/hw/keystore.hi3650.so
 vendor/lib64/hw/keystore.hi3650.so
 
 # Lights (Hardware)
-vendor/lib/hw/lights.default.so:vendor/lib/hw/lights.hi3650.so
-vendor/lib64/hw/lights.default.so:vendor/lib64/hw/lights.hi3650.so
 vendor/bin/hw/vendor.huawei.hardware.light@2.0-service
 vendor/etc/init/vendor.huawei.hardware.light@2.0-service.rc
+vendor/lib/hw/lights.default.so:vendor/lib/hw/lights.hi3650.so
 vendor/lib/vendor.huawei.hardware.light@2.0.so
+vendor/lib64/hw/lights.default.so:vendor/lib64/hw/lights.hi3650.so
 vendor/lib64/hw/vendor.huawei.hardware.light@2.0-impl.so
 vendor/lib64/vendor.huawei.hardware.light@2.0.so
 
@@ -1070,6 +1070,8 @@ vendor/lib64/libperfhub.so
 vendor/lib64/libperfhub_service.so
 
 # Performance (Hardware)
+lib64/libiawareperf_client.so
+lib64/vendor.huawei.hardware.iawareperf@1.0.so
 vendor/bin/hw/vendor.huawei.hardware.iawareperf@1.0-service
 vendor/bin/hw/vendor.huawei.hardware.perfgenius@1.0-service
 vendor/etc/init/vendor.huawei.hardware.iawareperf@1.0-service.rc
@@ -1081,8 +1083,6 @@ vendor/lib64/hw/vendor.huawei.hardware.iawareperf@1.0-impl.so
 vendor/lib64/hw/vendor.huawei.hardware.perfgenius@1.0-impl.so
 vendor/lib64/vendor.huawei.hardware.iawareperf@1.0.so
 vendor/lib64/vendor.huawei.hardware.perfgenius@1.0.so
-lib64/libiawareperf_client.so
-lib64/vendor.huawei.hardware.iawareperf@1.0.so
 
 # Performance (Configs)
 vendor/etc/perfgenius_boost_policy.xml
@@ -1120,13 +1120,13 @@ vendor/lib/lib_sensor_fac_interface.so
 vendor/lib64/lib_sensor_fac_interface.so
 
 # Sensors (Hardware)
-vendor/lib/hw/sensors.default.so:vendor/lib/hw/sensors.hi3650.so
-vendor/lib64/hw/sensors.default.so:vendor/lib64/hw/sensors.hi3650.so
 vendor/bin/hw/vendor.huawei.hardware.sensors@1.0-service
 vendor/etc/init/vendor.huawei.hardware.sensors@1.0-service.rc
+vendor/lib/hw/sensors.default.so:vendor/lib/hw/sensors.hi3650.so
 vendor/lib/vendor.huawei.hardware.activity_recognition@1.0.so
 vendor/lib/vendor.huawei.hardware.sensors@1.0.so
 vendor/lib64/hw/activity_recognition.default.so
+vendor/lib64/hw/sensors.default.so:vendor/lib64/hw/sensors.hi3650.so
 vendor/lib64/hw/vendor.huawei.hardware.activity_recognition@1.0-impl.so
 vendor/lib64/hw/vendor.huawei.hardware.sensors@1.0-impl.so
 vendor/lib64/vendor.huawei.hardware.activity_recognition@1.0.so
@@ -1162,6 +1162,8 @@ vendor/etc/cfg_bkl_lx9_hisi.ini
 vendor/etc/cfg_chicago_hisi.ini
 
 # TEE
+system/lib/libtuidaemon.so:vendor/lib/libtuidaemon.so
+system/lib64/libtuidaemon.so:vendor/lib64/libtuidaemon.so
 vendor/etc/DroidSansFallbackTui.ttf
 vendor/lib/libstorekeybox.so
 vendor/lib/libteec.so
@@ -1169,8 +1171,6 @@ vendor/lib/libtrustzone_key_manager.so
 vendor/lib64/libstorekeybox.so
 vendor/lib64/libteec.so
 vendor/lib64/libtrustzone_key_manager.so
-system/lib/libtuidaemon.so:vendor/lib/libtuidaemon.so
-system/lib64/libtuidaemon.so:vendor/lib64/libtuidaemon.so
 
 # TEE (Hardware)
 vendor/lib/vendor.huawei.hardware.libteec@1.0.so
@@ -1180,8 +1180,8 @@ vendor/lib64/vendor.huawei.hardware.libteec@1.0.so
 vendor/lib64/vendor.huawei.hardware.teecdaemon@1.0.so
 
 # TEE (Daemon)
-vendor/bin/teecd
 bin/system_teecd:vendor/bin/system_teecd
+vendor/bin/teecd
 
 # TEE (Sec)
 vendor/bin/6c8cf255-ca98-439e-a98e-ade64022ecb6.sec
@@ -1236,8 +1236,8 @@ vendor/lib/libnvme.so
 vendor/lib64/libnvme.so
 
 # Oeminfo
-vendor/bin/oeminfo_nvm_server|4bbcf9000c0ec5eca461dadd89bfa1e0eae4b1ae
 vendor/bin/oeminfo_gamma
+vendor/bin/oeminfo_nvm_server|4bbcf9000c0ec5eca461dadd89bfa1e0eae4b1ae
 vendor/lib/libBootloaderOeminfo.so
 vendor/lib/liboeminfo.so
 vendor/lib64/libBootloaderOeminfo.so
@@ -1253,28 +1253,29 @@ vendor/firmware/isp_dts.img
 vendor/firmware/isp_fw.elf
 
 # RIL (Daemons)
-vendor/bin/hw/rild
 vendor/bin/atcmdserver
+vendor/bin/hw/rild
 vendor/etc/init/rild.rc
 
 # RIL
--vendor/lib/libril.so
--vendor/lib64/libril.so
+vendor/lib/lib_wifi_sar.so
 vendor/lib/libbalong-ril-1.so
 vendor/lib/libbalong-ril-2.so
 vendor/lib/libbalong-ril.so
+-vendor/lib/libril.so
 vendor/lib/libvia-ril.so
-vendor/lib/lib_wifi_sar.so
+vendor/lib64/lib_wifi_sar.so
 vendor/lib64/libbalong-ril-1.so
 vendor/lib64/libbalong-ril-2.so
 vendor/lib64/libbalong-ril.so
+-vendor/lib64/libril.so
 vendor/lib64/libvia-ril.so
-vendor/lib64/lib_wifi_sar.so
 
 # RIL (Properties)
 vendor/phone.prop
 
 # RIL (Configs)
+vendor/etc/factory_modem.cfg
 vendor/etc/modemConfig/VIA/basic_name
 vendor/etc/modemConfig/VIA/viacbp82d_FieldTest.bcfg
 vendor/etc/modemConfig/balong/FieldTest.cfg
@@ -1282,7 +1283,6 @@ vendor/etc/modemConfig/balong/basic_name
 vendor/etc/modemConfig/hids_ue_msg.cfg
 vendor/etc/modemConfig/viacbp82d_log.bcfg
 vendor/etc/modemConfig/viacbp82d_shutdown_log.bcfg
-vendor/etc/factory_modem.cfg
 
 # Hwfs (Hardware)
 vendor/bin/hw/vendor.huawei.hardware.hwfs@1.0-service
