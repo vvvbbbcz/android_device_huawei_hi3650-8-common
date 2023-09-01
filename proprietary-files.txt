@@ -1219,11 +1219,13 @@ vendor/lib64/libnvme.so
 
 # Oeminfo
 vendor/bin/oeminfo_gamma
-vendor/bin/oeminfo_nvm_server|4bbcf9000c0ec5eca461dadd89bfa1e0eae4b1ae
 vendor/lib/libBootloaderOeminfo.so
 vendor/lib/liboeminfo.so
 vendor/lib64/libBootloaderOeminfo.so
 vendor/lib64/liboeminfo.so
+
+# Oeminfo (ramdisk) - from NXT 8.0.0 OPR6.170623.010
+vendor/bin/oeminfo_nvm_server|4bbcf9000c0ec5eca461dadd89bfa1e0eae4b1ae
 
 # RIL (ISP)
 vendor/bin/ispcoresight
