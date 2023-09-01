@@ -1255,7 +1255,6 @@ vendor/firmware/isp_fw.elf
 # RIL (Daemons)
 vendor/bin/atcmdserver
 vendor/bin/hw/rild
-vendor/etc/init/rild.rc
 
 # RIL
 vendor/lib/lib_wifi_sar.so
