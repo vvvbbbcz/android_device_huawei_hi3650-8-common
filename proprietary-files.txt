@@ -1046,6 +1046,10 @@ vendor/lib64/libvio.so
 vendor/bin/hw/vendor.huawei.hardware.jpegdec@1.0-service
 vendor/etc/init/vendor.huawei.hardware.jpegdec@1.0-service.rc
 
+# Media (Configs)
+vendor/etc/topazhp.cfg
+vendor/etc/vdec_atlas.cfg
+
 # Performance
 lib64/libiawareperf_client.so
 vendor/bin/irqbalance
@@ -1063,10 +1067,6 @@ vendor/lib64/libperfhub_service.so
 # Performance (Hardware)
 lib64/libiawareperf_client.so
 lib64/vendor.huawei.hardware.iawareperf@1.0.so
-vendor/bin/hw/vendor.huawei.hardware.iawareperf@1.0-service
-vendor/bin/hw/vendor.huawei.hardware.perfgenius@1.0-service
-vendor/etc/init/vendor.huawei.hardware.iawareperf@1.0-service.rc
-vendor/etc/init/vendor.huawei.hardware.perfgenius@1.0-service.rc
 vendor/lib/hw/vendor.huawei.hardware.perfgenius@1.0-impl.so
 vendor/lib/vendor.huawei.hardware.iawareperf@1.0.so
 vendor/lib/vendor.huawei.hardware.perfgenius@1.0.so
@@ -1074,13 +1074,6 @@ vendor/lib64/hw/vendor.huawei.hardware.iawareperf@1.0-impl.so
 vendor/lib64/hw/vendor.huawei.hardware.perfgenius@1.0-impl.so
 vendor/lib64/vendor.huawei.hardware.iawareperf@1.0.so
 vendor/lib64/vendor.huawei.hardware.perfgenius@1.0.so
-
-# Performance (Configs)
-vendor/etc/perfgenius_boost_policy.xml
-vendor/etc/perfgenius_config.xml
-vendor/etc/perfgenius_mode_policy.xml
-vendor/etc/topazhp.cfg
-vendor/etc/vdec_atlas.cfg
 
 # Radio (Hardware)
 vendor/lib/vendor.huawei.hardware.radio@1.0.so

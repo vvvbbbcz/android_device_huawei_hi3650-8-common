@@ -90,10 +90,6 @@ media.stagefright.thumbnail.prefer_hw_codecs=true
 # MMU
 ro.config.mmu_en=1
 
-# Perfgenius
-ro.config.hw_perfgenius=true
-ro.config.hw_board_ipa=true
-
 # Platform
 ro.product.platform.pseudonym=1ARB9CV
 ro.comp.chipset_version=Chipset-chicago 8.0.0.6(057Z)
