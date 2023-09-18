@@ -280,6 +280,7 @@ PRODUCT_PACKAGES += \
     libshim_hwcam \
     libshim_log \
     libshim_ui \
+    libshim_utils \
     libtinyxml2_shim.vendor \
     guivnd
 

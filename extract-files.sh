@@ -144,6 +144,9 @@ function blob_fixup() {
         vendor/bin/CameraDaemon)
             "${PATCHELF}" --add-needed "libbinder_shim.so" "${2}"
             ;;
+        vendor/bin/modemlogcat_lte)
+            "${PATCHELF}" --add-needed "libshim_utils.so" "${2}"
+            ;;
         vendor/bin/system_teecd|vendor/bin/teecd)
             "${SIGSCAN}" -p "1f 05 00 71 41 03 00 54" -P "1f 05 00 71 1a 00 00 14" -f "${2}"
             ;;
