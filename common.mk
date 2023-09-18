@@ -75,7 +75,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     libgui_vendor \
-    libstdc++.vendor
 
 # DRM
 PRODUCT_PACKAGES += \
@@ -287,7 +286,6 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/hisi \
     hardware/google/interfaces \
     hardware/google/pixel \
-    hardware/hisi \
     hardware/hisi/power-libperfmgr
 
 # Touch
