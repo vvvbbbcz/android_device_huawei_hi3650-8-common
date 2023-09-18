@@ -278,7 +278,6 @@ PRODUCT_PACKAGES += \
     libsensor_vendor \
     libshim_emcom \
     libshim_hwcam \
-    libshim_hardware \
     libshim_log \
     libshim_ui \
     libtinyxml2_shim.vendor \
