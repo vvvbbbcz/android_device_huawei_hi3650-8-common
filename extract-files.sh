@@ -151,6 +151,9 @@ function blob_fixup() {
             "${PATCHELF}" --remove-needed "libicuuc.so" "${2}"
             sed -i 's/\([Uu][Cc][Nn][Vv]_[A-Za-z_]*\)_58/\1_70/g' "${2}"
             ;;
+        vendor/bin/glgps*)
+            sed -i "s/SSLv3_client_method/SSLv23_method\x00\x00\x00\x00\x00\x00/" "${2}"
+            ;;
         vendor/bin/hw/android.hardware.drm@1.0-service.widevine)
             "${PATCHELF}" --add-needed "libbase_shim.so" "${2}"
             ;;
