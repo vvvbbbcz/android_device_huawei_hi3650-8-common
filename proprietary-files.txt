@@ -457,6 +457,9 @@ vendor/etc/higeo.conf
 vendor/etc/higeo_beta.conf
 vendor/etc/libgps4774.conf
 
+# GPS (Apps)
+-app/gnss_supl20service_hisi/gnss_supl20service_hisi.apk:priv-app/gnss_supl20service_hisi/gnss_supl20service_hisi.apk
+
 # Gatekeeper (Hardware)
 vendor/lib/hw/gatekeeper.hi3650.so
 vendor/lib64/hw/gatekeeper.hi3650.so

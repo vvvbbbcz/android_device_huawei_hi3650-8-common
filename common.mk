@@ -100,6 +100,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.gnss@1.0_types
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/privapp-permissions-com.android.supl.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-com.android.supl.xml
+
 # Graphics
 PRODUCT_PACKAGES += \
     android.hardware.configstore@1.1-service \
