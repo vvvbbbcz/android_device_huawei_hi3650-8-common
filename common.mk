@@ -96,6 +96,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.gnss@1.1.vendor
 
+PRODUCT_PACKAGES += \
+    android.hardware.gnss@1.0_types
+
 # Graphics
 PRODUCT_PACKAGES += \
     android.hardware.configstore@1.1-service \

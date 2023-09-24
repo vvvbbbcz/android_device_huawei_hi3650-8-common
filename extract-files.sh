@@ -162,6 +162,9 @@ function blob_fixup() {
         vendor/lib*/vendor.huawei.hardware.graphics.gpucommon@1.0.so)
             "${PATCHELF}" --add-needed "android.hardware.graphics.common@1.0_types.so" "${2}"
             ;;
+        vendor/lib*/vendor.huawei.hardware.fusd@1.1.so)
+            "${PATCHELF}" --add-needed "android.hardware.gnss@1.0_types" "${2}"
+            ;;
         vendor/lib*/hw/vendor.huawei.hardware.sensors@1.0-impl.so)
             "${PATCHELF}" --add-needed "libbase_shim.so" "${2}"
             ;;
