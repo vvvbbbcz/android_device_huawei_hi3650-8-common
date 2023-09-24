@@ -87,6 +87,7 @@ function blob_fixup() {
         vendor/lib*/libcamera_algo.so)
             sed -i 's|libgui.so|guivnd.so|g' "${2}"
             "${PATCHELF}" --add-needed "libui_shim.so" "${2}"
+            "${PATCHELF}" --replace-needed "libsensor.so" "libsensor_vendor.so" "${2}"
             ;;
         vendor/lib*/libcamera_ivp.so)
             sed -i 's|libgui.so|guivnd.so|g' "${2}"
@@ -103,9 +104,6 @@ function blob_fixup() {
             ;;
         vendor/lib64/hw/keystore.hi3650.so)
             sed -i 's|/system/lib64/libcrypto.so|libcrypto.so\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00|g' "${2}"
-            ;;
-        vendor/lib64/libcamera_algo.so)
-            "${PATCHELF}" --replace-needed "libsensor.so" "libsensor_vendor.so" "${2}"
             ;;
         vendor/lib*/hw/vendor.huawei.hardware.hisupl@1.0-impl.so)
             # Respect the HMI's ID, which is hisupl

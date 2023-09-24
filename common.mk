@@ -75,6 +75,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     libgui_vendor \
+    libsensor_vendor
 
 # DRM
 PRODUCT_PACKAGES += \
