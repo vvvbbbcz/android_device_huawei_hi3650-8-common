@@ -389,6 +389,7 @@ vendor/lib64/libgnss_supl20if_hisi.so
 vendor/lib64/libgps_factory_test.so
 vendor/lib64/libviagpsrpc.so
 vendor/lib64/libxmodemgpsrpc.so
+lib64/libicuuc.so:vendor/lib64/libicuuc-v27.so
 
 # GPS (Hardware)
 vendor/bin/hw/vendor.huawei.hardware.gnss@1.0-service

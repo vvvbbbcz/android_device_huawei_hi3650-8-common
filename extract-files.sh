@@ -151,8 +151,7 @@ function blob_fixup() {
             "${SIGSCAN}" -p "1f 05 00 71 41 03 00 54" -P "1f 05 00 71 1a 00 00 14" -f "${2}"
             ;;
         vendor/bin/gpsdaemon)
-            "${PATCHELF}" --remove-needed "libicuuc.so" "${2}"
-            sed -i 's/\([Uu][Cc][Nn][Vv]_[A-Za-z_]*\)_58/\1_70/g' "${2}"
+            "${PATCHELF}" --replace-needed "libicuuc.so" "libicuuc-v27.so" "${2}"
             ;;
         vendor/bin/glgps*)
             sed -i "s/SSLv3_client_method/SSLv23_method\x00\x00\x00\x00\x00\x00/" "${2}"
