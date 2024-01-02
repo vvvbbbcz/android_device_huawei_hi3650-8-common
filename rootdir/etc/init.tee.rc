@@ -1,10 +1,20 @@
 on init
     chmod 0400 /dev/hisi_teelog
 
+on post-fs-data
+    mkdir /data/sec_storage_data 0700 system system
+    restorecon /data/sec_storage_data
+    mkdir /data/sec_storage_data_users 0700 system system
+    restorecon /data/sec_storage_data_users
+    mkdir /data/vendor/log/sec_storage_data 0775 system system
+    mkdir /data/vendor/log/sec_storage_data/log 0755 system system
+    start teecd
+
 service teecd /vendor/bin/teecd
     class core
     user root
     group root readproc
+    disabled
 
 service system_teecd /vendor/bin/system_teecd
     socket tui_daemon stream 660 root system
