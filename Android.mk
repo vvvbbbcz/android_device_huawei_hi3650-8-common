@@ -26,10 +26,15 @@ $(EGL_64_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 	@rm -rf $@
 	$(hide) ln -sf /vendor/lib64/egl/libGLES_mali.so $@
 
-NATIVE_PACKAGES_FIXUP := $(TARGET_OUT_VENDOR)/etc/native_packages.xml
-$(NATIVE_PACKAGES_FIXUP): $(TARGET_OUT_VENDOR)/etc/native_packages.bin
+VENDOR_NATIVE_PACKAGES_FIXUP := $(TARGET_OUT_VENDOR)/etc/native_packages.xml
+$(VENDOR_NATIVE_PACKAGES_FIXUP): $(TARGET_OUT_VENDOR)/etc/native_packages.bin
 	@echo "Move vendor native_packages.bin to native_packages.xml"
 	$(hide) mv $(TARGET_OUT_VENDOR)/etc/native_packages.bin $@
 
-ALL_DEFAULT_INSTALLED_MODULES += $(NATIVE_PACKAGES_FIXUP) $(EGL_32_SYMLINKS) $(EGL_64_SYMLINKS)
+SYSTEM_NATIVE_PACKAGES_FIXUP := $(PRODUCT_OUT)/system/etc/native_packages.xml
+$(SYSTEM_NATIVE_PACKAGES_FIXUP): $(PRODUCT_OUT)/system/etc/native_packages.bin
+	@echo "Move system native_packages.bin to native_packages.xml"
+	$(hide) mv $(PRODUCT_OUT)/system/etc/native_packages.bin $@
+
+ALL_DEFAULT_INSTALLED_MODULES += $(SYSTEM_NATIVE_PACKAGES_FIXUP) $(VENDOR_NATIVE_PACKAGES_FIXUP) $(EGL_32_SYMLINKS) $(EGL_64_SYMLINKS)
 endif

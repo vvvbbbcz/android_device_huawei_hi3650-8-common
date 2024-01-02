@@ -1200,8 +1200,9 @@ vendor/bin/pki_provision_ta.sec
 vendor/bin/syna_109A0_ta.sec
 vendor/bin/syna_155A_ta.sec
 
-# TEE (Configs)
-vendor/etc/native_packages.xml:vendor/etc/native_packages.bin
+# TEE (Configs) - from PRA-LX1-user 8.0.0 HUAWEIPRA-LX1 402(C432) release-keys
+vendor/etc/native_packages.xml:vendor/etc/native_packages.bin|e9a05a062118d926e26ebdfad94e4cfca4e1fa46
+etc/native_packages.xml:etc/native_packages.bin|f5bcd86064f9035406533e64a8b9bb39f5184614
 
 # Storage
 vendor/bin/hwemerffu
