@@ -65,6 +65,9 @@ function blob_fixup() {
 	    sed -i 's/GB2312/iso-8859-1/g' "${2}"
 	    sed -i 's/xmlversion/xml version/g' "${2}"
             ;;
+        vendor/etc/init/android.hardware.drm@1.0-service.widevine.rc)
+            sed -i 's/preavs/vendor/g' "${2}"
+            ;;
         lib64/libemcomutil.so)
             "${PATCHELF}" --add-needed "libshim_emcom.so" "${2}"
             ;;
