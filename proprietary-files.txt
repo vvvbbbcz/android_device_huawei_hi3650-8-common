@@ -43,12 +43,12 @@ lib64/libft2.so:vendor/lib64/libft2.so
 lib64/libicui18n.so:vendor/lib64/libicui18n.so
 lib64/libicuuc.so:vendor/lib64/libicuuc.so
 lib64/libskia.so:vendor/lib64/libskia.so
-odm/lib/libDocBeauty.so
-odm/lib/libFNVfbEngineLib.so
-odm/lib/libSFBE.so
-odm/lib64/libDocBeauty.so
-odm/lib64/libFNVfbEngineLib.so
-odm/lib64/libSFBE.so
+#odm/lib/libDocBeauty.so
+#odm/lib/libFNVfbEngineLib.so
+#odm/lib/libSFBE.so
+#odm/lib64/libDocBeauty.so
+#odm/lib64/libFNVfbEngineLib.so
+#odm/lib64/libSFBE.so
 vendor/lib/libAfStatCalc.so
 vendor/lib/libBestShot.so
 vendor/lib/libFaceBeautyMeiwo.so
@@ -173,65 +173,65 @@ odm/hw_odm/ncfg/TEST.ato:odm/etc/ncfg/TEST.ato
 odm/hw_odm/ncfg/VDF_IN.ato:odm/etc/ncfg/VDF_IN.ato
 odm/hw_odm/ncfg/IDEA_IN.ato:odm/etc/ncfg/IDEA_IN.ato
 odm/hw_odm/BASE.xml:odm/etc/BASE.xml
-odm/hw_odm/NXT-L09/ncfg/vha/au/COMMON.bin:odm/etc/NXT-L09/ncfg/vha/au/COMMON.bin
-odm/hw_odm/NXT-L09/ncfg/h3g/ie/COMMON.bin:odm/etc/NXT-L09/ncfg/h3g/ie/COMMON.bin
-odm/hw_odm/NXT-L09/ncfg/h3g/at/COMMON.bin:odm/etc/NXT-L09/ncfg/h3g/at/COMMON.bin
-odm/hw_odm/NXT-L09/ncfg/h3g/it/COMMON.bin:odm/etc/NXT-L09/ncfg/h3g/it/COMMON.bin
-odm/hw_odm/NXT-L09/ncfg/tigo/la/COMMON.bin:odm/etc/NXT-L09/ncfg/tigo/la/COMMON.bin
-odm/hw_odm/NXT-L09/ncfg/tigo/bo/COMMON.bin:odm/etc/NXT-L09/ncfg/tigo/bo/COMMON.bin
-odm/hw_odm/NXT-L09/ncfg/vdf2d/nz/COMMON.bin:odm/etc/NXT-L09/ncfg/vdf2d/nz/COMMON.bin
-odm/hw_odm/NXT-L09/ncfg/COMMON.bin:odm/etc/NXT-L09/ncfg/COMMON.bin
-odm/hw_odm/NXT-L09/ncfg/vodacom/za/COMMON.bin:odm/etc/NXT-L09/ncfg/vodacom/za/COMMON.bin
-odm/hw_odm/NXT-L09/ncfg/telstra/au/COMMON.bin:odm/etc/NXT-L09/ncfg/telstra/au/COMMON.bin
-odm/hw_odm/NXT-L09/ncfg/p4/pl/COMMON.bin:odm/etc/NXT-L09/ncfg/p4/pl/COMMON.bin
-odm/hw_odm/NXT-L09/ncfg/mtn/za/COMMON.bin:odm/etc/NXT-L09/ncfg/mtn/za/COMMON.bin
-odm/hw_odm/NXT-L09/ncfg/iusacell/mx/COMMON.bin:odm/etc/NXT-L09/ncfg/iusacell/mx/COMMON.bin
-odm/hw_odm/NXT-L09/ncfg/polkomtel/pl/COMMON.bin:odm/etc/NXT-L09/ncfg/polkomtel/pl/COMMON.bin
-odm/hw_odm/NXT-L09/ncfg/wind/it/COMMON.bin:odm/etc/NXT-L09/ncfg/wind/it/COMMON.bin
-odm/hw_odm/NXT-L09/ncfg/entel/la/COMMON.bin:odm/etc/NXT-L09/ncfg/entel/la/COMMON.bin
-odm/hw_odm/NXT-L09/ncfg/movistar/co/COMMON.bin:odm/etc/NXT-L09/ncfg/movistar/co/COMMON.bin
-odm/hw_odm/NXT-L09/ncfg/wom/cl/COMMON.bin:odm/etc/NXT-L09/ncfg/wom/cl/COMMON.bin
-odm/hw_odm/NXT-L09/ncfg/channelvolte/la/COMMON.bin:odm/etc/NXT-L09/ncfg/channelvolte/la/COMMON.bin
-odm/hw_odm/NXT-L09/ncfg/ti/it/COMMON.bin:odm/etc/NXT-L09/ncfg/ti/it/COMMON.bin
-odm/hw_odm/NXT-L09/ncfg/telefonica/la/COMMON.bin:odm/etc/NXT-L09/ncfg/telefonica/la/COMMON.bin
-odm/hw_odm/NXT-L09/ncfg/il/pelephone/COMMON.bin:odm/etc/NXT-L09/ncfg/il/pelephone/COMMON.bin
-odm/hw_odm/NXT-L09/ncfg/il/cellcom/COMMON.bin:odm/etc/NXT-L09/ncfg/il/cellcom/COMMON.bin
-odm/hw_odm/NXT-L09/ncfg/il/openmarket/COMMON.bin:odm/etc/NXT-L09/ncfg/il/openmarket/COMMON.bin
-odm/hw_odm/NXT-L09/ncfg/il/orange/COMMON.bin:odm/etc/NXT-L09/ncfg/il/orange/COMMON.bin
-odm/hw_odm/NXT-L09/ncfg/il/hotmobile/COMMON.bin:odm/etc/NXT-L09/ncfg/il/hotmobile/COMMON.bin
-odm/hw_odm/NXT-L09/ncfg/2degrees/nz/COMMON.bin:odm/etc/NXT-L09/ncfg/2degrees/nz/COMMON.bin
-odm/hw_odm/NXT-L09/ncfg/sfr/fr/COMMON.bin:odm/etc/NXT-L09/ncfg/sfr/fr/COMMON.bin
-odm/hw_odm/NXT-L09/ncfg/claro/la/COMMON.bin:odm/etc/NXT-L09/ncfg/claro/la/COMMON.bin
-odm/hw_odm/NXT-L09/ncfg/nos/pt/COMMON.bin:odm/etc/NXT-L09/ncfg/nos/pt/COMMON.bin
-odm/hw_odm/NXT-L09/ncfg/meo/pt/COMMON.bin:odm/etc/NXT-L09/ncfg/meo/pt/COMMON.bin
-odm/hw_odm/NXT-L09/ncfg/hw/eu/COMMON.bin:odm/etc/NXT-L09/ncfg/hw/eu/COMMON.bin
-odm/hw_odm/NXT-L09/ncfg/hw/default/COMMON.bin:odm/etc/NXT-L09/ncfg/hw/default/COMMON.bin
-odm/hw_odm/NXT-L09/ncfg/hw/meafnaf/COMMON.bin:odm/etc/NXT-L09/ncfg/hw/meafnaf/COMMON.bin
-odm/hw_odm/NXT-L09/ncfg/hw/la/COMMON.bin:odm/etc/NXT-L09/ncfg/hw/la/COMMON.bin
-odm/hw_odm/NXT-L09/ncfg/hw/spcseas/COMMON.bin:odm/etc/NXT-L09/ncfg/hw/spcseas/COMMON.bin
-odm/hw_odm/NXT-L09/ncfg/hw/normal/COMMON.bin:odm/etc/NXT-L09/ncfg/hw/normal/COMMON.bin
-odm/hw_odm/NXT-L09/ncfg/channel/tw/COMMON.bin:odm/etc/NXT-L09/ncfg/channel/tw/COMMON.bin
-odm/hw_odm/NXT-L09/ncfg/bytel/fr/COMMON.bin:odm/etc/NXT-L09/ncfg/bytel/fr/COMMON.bin
-odm/hw_odm/NXT-L09/ncfg/telcel/mx/COMMON.bin:odm/etc/NXT-L09/ncfg/telcel/mx/COMMON.bin
-odm/hw_odm/NXT-L09/ncfg/dt/tr/COMMON.bin:odm/etc/NXT-L09/ncfg/dt/tr/COMMON.bin
-odm/hw_odm/NXT-L09/ncfg/spark/nz/COMMON.bin:odm/etc/NXT-L09/ncfg/spark/nz/COMMON.bin
-odm/hw_odm/NXT-L29/ncfg/COMMON.bin:odm/etc/NXT-L29/ncfg/COMMON.bin
-odm/hw_odm/NXT-L29/ncfg/cmcciot/cn/COMMON.bin:odm/etc/NXT-L29/ncfg/cmcciot/cn/COMMON.bin
-odm/hw_odm/NXT-L29/ncfg/cmccwhtp/cn/COMMON.bin:odm/etc/NXT-L29/ncfg/cmccwhtp/cn/COMMON.bin
-odm/hw_odm/NXT-L29/ncfg/channelvolte/la/COMMON.bin:odm/etc/NXT-L29/ncfg/channelvolte/la/COMMON.bin
-odm/hw_odm/NXT-L29/ncfg/dualcucta/cn/COMMON.bin:odm/etc/NXT-L29/ncfg/dualcucta/cn/COMMON.bin
-odm/hw_odm/NXT-L29/ncfg/cmcc/cn/COMMON.bin:odm/etc/NXT-L29/ncfg/cmcc/cn/COMMON.bin
-odm/hw_odm/NXT-L29/ncfg/dualcu/cn/COMMON.bin:odm/etc/NXT-L29/ncfg/dualcu/cn/COMMON.bin
-odm/hw_odm/NXT-L29/ncfg/hw/normaldb/COMMON.bin:odm/etc/NXT-L29/ncfg/hw/normaldb/COMMON.bin
-odm/hw_odm/NXT-L29/ncfg/hw/eu/COMMON.bin:odm/etc/NXT-L29/ncfg/hw/eu/COMMON.bin
-odm/hw_odm/NXT-L29/ncfg/hw/default/COMMON.bin:odm/etc/NXT-L29/ncfg/hw/default/COMMON.bin
-odm/hw_odm/NXT-L29/ncfg/hw/meafnaf/COMMON.bin:odm/etc/NXT-L29/ncfg/hw/meafnaf/COMMON.bin
-odm/hw_odm/NXT-L29/ncfg/hw/la/COMMON.bin:odm/etc/NXT-L29/ncfg/hw/la/COMMON.bin
-odm/hw_odm/NXT-L29/ncfg/hw/spcseas/COMMON.bin:odm/etc/NXT-L29/ncfg/hw/spcseas/COMMON.bin
-odm/hw_odm/NXT-L29/ncfg/hw/ru/COMMON.bin:odm/etc/NXT-L29/ncfg/hw/ru/COMMON.bin
-odm/hw_odm/NXT-L29/ncfg/cmcccta/cn/COMMON.bin:odm/etc/NXT-L29/ncfg/cmcccta/cn/COMMON.bin
-odm/hw_odm/NXT-L29/ncfg/channel/au/COMMON.bin:odm/etc/NXT-L29/ncfg/channel/au/COMMON.bin
-odm/hw_odm/NXT-L29/ncfg/mts/by/COMMON.bin:odm/etc/NXT-L29/ncfg/mts/by/COMMON.bin
+odm/hw_odm/EVA-L09/ncfg/vha/au/COMMON.bin:odm/etc/EVA-L09/ncfg/vha/au/COMMON.bin
+odm/hw_odm/EVA-L09/ncfg/h3g/ie/COMMON.bin:odm/etc/EVA-L09/ncfg/h3g/ie/COMMON.bin
+odm/hw_odm/EVA-L09/ncfg/h3g/at/COMMON.bin:odm/etc/EVA-L09/ncfg/h3g/at/COMMON.bin
+odm/hw_odm/EVA-L09/ncfg/h3g/it/COMMON.bin:odm/etc/EVA-L09/ncfg/h3g/it/COMMON.bin
+odm/hw_odm/EVA-L09/ncfg/tigo/la/COMMON.bin:odm/etc/EVA-L09/ncfg/tigo/la/COMMON.bin
+odm/hw_odm/EVA-L09/ncfg/tigo/bo/COMMON.bin:odm/etc/EVA-L09/ncfg/tigo/bo/COMMON.bin
+odm/hw_odm/EVA-L09/ncfg/vdf2d/nz/COMMON.bin:odm/etc/EVA-L09/ncfg/vdf2d/nz/COMMON.bin
+odm/hw_odm/EVA-L09/ncfg/COMMON.bin:odm/etc/EVA-L09/ncfg/COMMON.bin
+odm/hw_odm/EVA-L09/ncfg/vodacom/za/COMMON.bin:odm/etc/EVA-L09/ncfg/vodacom/za/COMMON.bin
+odm/hw_odm/EVA-L09/ncfg/telstra/au/COMMON.bin:odm/etc/EVA-L09/ncfg/telstra/au/COMMON.bin
+odm/hw_odm/EVA-L09/ncfg/p4/pl/COMMON.bin:odm/etc/EVA-L09/ncfg/p4/pl/COMMON.bin
+odm/hw_odm/EVA-L09/ncfg/mtn/za/COMMON.bin:odm/etc/EVA-L09/ncfg/mtn/za/COMMON.bin
+odm/hw_odm/EVA-L09/ncfg/iusacell/mx/COMMON.bin:odm/etc/EVA-L09/ncfg/iusacell/mx/COMMON.bin
+odm/hw_odm/EVA-L09/ncfg/polkomtel/pl/COMMON.bin:odm/etc/EVA-L09/ncfg/polkomtel/pl/COMMON.bin
+odm/hw_odm/EVA-L09/ncfg/wind/it/COMMON.bin:odm/etc/EVA-L09/ncfg/wind/it/COMMON.bin
+odm/hw_odm/EVA-L09/ncfg/entel/la/COMMON.bin:odm/etc/EVA-L09/ncfg/entel/la/COMMON.bin
+odm/hw_odm/EVA-L09/ncfg/movistar/co/COMMON.bin:odm/etc/EVA-L09/ncfg/movistar/co/COMMON.bin
+odm/hw_odm/EVA-L09/ncfg/wom/cl/COMMON.bin:odm/etc/EVA-L09/ncfg/wom/cl/COMMON.bin
+odm/hw_odm/EVA-L09/ncfg/ti/it/COMMON.bin:odm/etc/EVA-L09/ncfg/ti/it/COMMON.bin
+odm/hw_odm/EVA-L09/ncfg/telefonica/la/COMMON.bin:odm/etc/EVA-L09/ncfg/telefonica/la/COMMON.bin
+odm/hw_odm/EVA-L09/ncfg/il/pelephone/COMMON.bin:odm/etc/EVA-L09/ncfg/il/pelephone/COMMON.bin
+odm/hw_odm/EVA-L09/ncfg/il/cellcom/COMMON.bin:odm/etc/EVA-L09/ncfg/il/cellcom/COMMON.bin
+odm/hw_odm/EVA-L09/ncfg/il/openmarket/COMMON.bin:odm/etc/EVA-L09/ncfg/il/openmarket/COMMON.bin
+odm/hw_odm/EVA-L09/ncfg/il/orange/COMMON.bin:odm/etc/EVA-L09/ncfg/il/orange/COMMON.bin
+odm/hw_odm/EVA-L09/ncfg/il/hotmobile/COMMON.bin:odm/etc/EVA-L09/ncfg/il/hotmobile/COMMON.bin
+#odm/hw_odm/EVA-L09/ncfg/2degrees/nz/COMMON.bin:odm/etc/EVA-L09/ncfg/2degrees/nz/COMMON.bin
+odm/hw_odm/EVA-L09/ncfg/sfr/fr/COMMON.bin:odm/etc/EVA-L09/ncfg/sfr/fr/COMMON.bin
+odm/hw_odm/EVA-L09/ncfg/claro/la/COMMON.bin:odm/etc/EVA-L09/ncfg/claro/la/COMMON.bin
+odm/hw_odm/EVA-L09/ncfg/nos/pt/COMMON.bin:odm/etc/EVA-L09/ncfg/nos/pt/COMMON.bin
+odm/hw_odm/EVA-L09/ncfg/meo/pt/COMMON.bin:odm/etc/EVA-L09/ncfg/meo/pt/COMMON.bin
+odm/hw_odm/EVA-L09/ncfg/hw/eu/COMMON.bin:odm/etc/EVA-L09/ncfg/hw/eu/COMMON.bin
+odm/hw_odm/EVA-L09/ncfg/hw/default/COMMON.bin:odm/etc/EVA-L09/ncfg/hw/default/COMMON.bin
+odm/hw_odm/EVA-L09/ncfg/hw/meafnaf/COMMON.bin:odm/etc/EVA-L09/ncfg/hw/meafnaf/COMMON.bin
+odm/hw_odm/EVA-L09/ncfg/hw/la/COMMON.bin:odm/etc/EVA-L09/ncfg/hw/la/COMMON.bin
+odm/hw_odm/EVA-L09/ncfg/hw/spcseas/COMMON.bin:odm/etc/EVA-L09/ncfg/hw/spcseas/COMMON.bin
+odm/hw_odm/EVA-L09/ncfg/hw/normal/COMMON.bin:odm/etc/EVA-L09/ncfg/hw/normal/COMMON.bin
+odm/hw_odm/EVA-L09/ncfg/channel/tw/COMMON.bin:odm/etc/EVA-L09/ncfg/channel/tw/COMMON.bin
+odm/hw_odm/EVA-L09/ncfg/bytel/fr/COMMON.bin:odm/etc/EVA-L09/ncfg/bytel/fr/COMMON.bin
+odm/hw_odm/EVA-L09/ncfg/telcel/mx/COMMON.bin:odm/etc/EVA-L09/ncfg/telcel/mx/COMMON.bin
+odm/hw_odm/EVA-L09/ncfg/dt/tr/COMMON.bin:odm/etc/EVA-L09/ncfg/dt/tr/COMMON.bin
+odm/hw_odm/EVA-L09/ncfg/spark/nz/COMMON.bin:odm/etc/EVA-L09/ncfg/spark/nz/COMMON.bin
+odm/hw_odm/EVA-L19/ncfg/channelvolte/la/COMMON.bin:odm/etc/EVA-L19/ncfg/channelvolte/la/COMMON.bin
+odm/hw_odm/EVA-L19/ncfg/cmcc/cn/COMMON.bin:odm/etc/EVA-L19/ncfg/cmcc/cn/COMMON.bin
+odm/hw_odm/EVA-L19/ncfg/cmcccta/cn/COMMON.bin:odm/etc/EVA-L19/ncfg/cmcccta/cn/COMMON.bin
+odm/hw_odm/EVA-L19/ncfg/cmcciot/cn/COMMON.bin:odm/etc/EVA-L19/ncfg/cmcciot/cn/COMMON.bin
+odm/hw_odm/EVA-L19/ncfg/dualcucta/cn/COMMON.bin:odm/etc/EVA-L19/ncfg/dualcucta/cn/COMMON.bin
+odm/hw_odm/EVA-L19/ncfg/dualcu/cn/COMMON.bin:odm/etc/EVA-L19/ncfg/dualcu/cn/COMMON.bin
+odm/hw_odm/EVA-L29/ncfg/COMMON.bin:odm/etc/EVA-L29/ncfg/COMMON.bin
+#odm/hw_odm/EVA-L29/ncfg/cmccwhtp/cn/COMMON.bin:odm/etc/EVA-L29/ncfg/cmccwhtp/cn/COMMON.bin
+odm/hw_odm/EVA-L29/ncfg/channelvolte/la/COMMON.bin:odm/etc/EVA-L29/ncfg/channelvolte/la/COMMON.bin
+#odm/hw_odm/EVA-L29/ncfg/hw/normaldb/COMMON.bin:odm/etc/EVA-L29/ncfg/hw/normaldb/COMMON.bin
+odm/hw_odm/EVA-L29/ncfg/hw/eu/COMMON.bin:odm/etc/EVA-L29/ncfg/hw/eu/COMMON.bin
+odm/hw_odm/EVA-L29/ncfg/hw/default/COMMON.bin:odm/etc/EVA-L29/ncfg/hw/default/COMMON.bin
+odm/hw_odm/EVA-L29/ncfg/hw/meafnaf/COMMON.bin:odm/etc/EVA-L29/ncfg/hw/meafnaf/COMMON.bin
+odm/hw_odm/EVA-L29/ncfg/hw/la/COMMON.bin:odm/etc/EVA-L29/ncfg/hw/la/COMMON.bin
+odm/hw_odm/EVA-L29/ncfg/hw/spcseas/COMMON.bin:odm/etc/EVA-L29/ncfg/hw/spcseas/COMMON.bin
+odm/hw_odm/EVA-L29/ncfg/hw/ru/COMMON.bin:odm/etc/EVA-L29/ncfg/hw/ru/COMMON.bin
+odm/hw_odm/EVA-L29/ncfg/channel/au/COMMON.bin:odm/etc/EVA-L29/ncfg/channel/au/COMMON.bin
+odm/hw_odm/EVA-L29/ncfg/mts/by/COMMON.bin:odm/etc/EVA-L29/ncfg/mts/by/COMMON.bin
 system/emui/base/global/ons.bin:vendor/etc/ons/ons.bin
 
 # Connectivity
@@ -252,12 +252,12 @@ vendor/lib64/libpf_oneimage_hisi.so
 vendor/lib64/libpf_rotate_hisi.so
 
 # DRM (Hardware)
-vendor/bin/hw/android.hardware.drm@1.0-service.widevine
+#vendor/bin/hw/android.hardware.drm@1.0-service.widevine
 vendor/etc/init/android.hardware.drm@1.0-service.widevine.rc
 
 # DRM (Widevine)
-vendor/lib/libwvhidl.so
-vendor/lib64/libwvhidl.so
+#vendor/lib/libwvhidl.so
+#vendor/lib64/libwvhidl.so
 
 # FM
 vendor/lib/libfm_interface.so
@@ -1241,8 +1241,8 @@ vendor/lib/liboeminfo.so
 vendor/lib64/libBootloaderOeminfo.so
 vendor/lib64/liboeminfo.so
 
-# Oeminfo (ramdisk) - from NXT 8.0.0 OPR6.170623.010
-vendor/bin/oeminfo_nvm_server|7757d31ffcb498bccabec2f3aba1f7bfd9f1efbd
+# Oeminfo (ramdisk) - from EVA 8.0.0 OPR6.170623.010
+#vendor/bin/oeminfo_nvm_server|7757d31ffcb498bccabec2f3aba1f7bfd9f1efbd
 
 # RIL (ISP)
 vendor/bin/ispcoresight
