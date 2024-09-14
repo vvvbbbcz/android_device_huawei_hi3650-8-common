@@ -302,6 +302,7 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/google/interfaces \
     hardware/google/pixel \
     hardware/hisi/power-libperfmgr
+#     hardware/huawei
 
 # Touch
 PRODUCT_PACKAGES += \
@@ -340,4 +341,4 @@ PRODUCT_PACKAGES += \
 include hardware/broadcom/wlan/bcmdhd/config/config-bcm.mk
 
 # Inherit the proprietary files
-$(call inherit-product, vendor/huawei/hi3650-8-common/hi3650-8-common-vendor.mk)
+$(call inherit-product, vendor/huawei/eva/eva-vendor.mk)

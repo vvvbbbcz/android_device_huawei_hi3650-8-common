@@ -4,7 +4,10 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-COMMON_PATH := device/huawei/hi3650-8-common
+COMMON_PATH := device/huawei/eva
+
+DISABLE_DEXPREOPT_CHECK := false
+BUILD_BROKEN_DUP_RULES := true
 
 # APEX
 OVERRIDE_TARGET_FLATTEN_APEX := true
@@ -70,7 +73,7 @@ TARGET_RECOVERY_DEVICE_MODULES := init_hisi
 BOARD_KERNEL_IMAGE_NAME := Image.gz
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
-TARGET_KERNEL_SOURCE := kernel/huawei/hi3650-8
+TARGET_KERNEL_SOURCE := kernel/huawei/hi3650
 TARGET_KERNEL_CONFIG := merge_hi3650_defconfig
 TARGET_KERNEL_CLANG_VERSION := r416183b
 TARGET_KERNEL_CLANG_PATH := $(abspath .)/prebuilts/clang/kernel/$(HOST_PREBUILT_TAG)/clang-$(TARGET_KERNEL_CLANG_VERSION)
@@ -147,4 +150,4 @@ WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Inherit the proprietary files
-include vendor/huawei/hi3650-8-common/BoardConfigVendor.mk
+include vendor/huawei/eva/BoardConfigVendor.mk
